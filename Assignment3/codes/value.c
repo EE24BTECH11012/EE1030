@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+//includes the contents from Standard Library and Math Library.
 int main(void) {
 	double M_x, M_y, A_x, A_y, B_x, B_y ;
 	M_x = 0 ; M_y = 4 ; A_x = -2 ; A_y = 3 ;
