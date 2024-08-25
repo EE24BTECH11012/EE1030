@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  25 AUG 2024 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  26 AUG 2024 00:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1923,18 +1923,6 @@ l.61 .... If the coordinates of $\vec{B}$ are \vec
 
 ? 
 (./tables/table1.tex
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.3 ...tbf{Variable name} & \textbf{Description} &
-                                                   \textbf{Formula}\\
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.5 ... plane whose coordinates are to be found. &
-                                                    \\
-? 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1942,24 +1930,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.7 ...he point in 2-D plane with coordinates \vec
-                                                  {-2,3} & \\
-? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.7 ... in 2-D plane with coordinates \vec{-2,3} &
-                                                   \\
-? 
-
-! LaTeX Error: \mathbf allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 ...$M$ & The midpoint of the line-segment \vec
-                                                  {AB} with coordinates \vec...
+l.10 ...e point in 2-D plane with coordinates \vec
+                                                  {-2,3} & $B$ = \brak{-2,3} \\
 
 ? 
 
@@ -1969,15 +1941,26 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.9 ...line-segment \vec{AB} with coordinates \vec
-                                                  {0,4} &\\
+l.12 		M & The midpoint of the line-segment \vec
+                                                {AB} with coordinates \vec{0...
+
 ? 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.9 ...gment \vec{AB} with coordinates \vec{0,4} &
-                                                  \\
+
+! LaTeX Error: \mathbf allowed only in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 ...ine-segment \vec{AB} with coordinates \vec
+                                                  {0,4} & $M$ = \brak{0,4} $...
+
 ? 
+
+Overfull \hbox (50.87224pt too wide) in paragraph at lines 4--16
+ [][] 
+ []
+
 )
 
 ! LaTeX Error: \mathbf allowed only in math mode.
@@ -1986,7 +1969,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 Coordinates of B = \vec
+l.64 Coordinates of B = \vec
                             {-2,3} \\
 ? 
 
@@ -1996,8 +1979,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71 Coordinates of midpoint \brak{say M}  = \vec
+l.65 Coordinates of midpoint \brak{say M}  = \vec
                                                  {0,4} \\
+? 
+! Misplaced alignment tab character &.
+l.67 	$$ \vec{M} &
+                  = \frac{\vec{A} + \vec{B}}{2} $$
 ? 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
@@ -2006,13 +1993,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.90 ...he coordinates of point $\vec{A}$ are \vec
+l.76 ...he coordinates of point $\vec{A}$ are \vec
                                                   {2,5} .
 ? 
 <figs/value1.jpg, id=31, 462.528pt x 346.896pt>
 File: figs/value1.jpg Graphic file (type jpg)
 <use figs/value1.jpg>
-Package pdftex.def Info: figs/value1.jpg  used on input line 94.
+Package pdftex.def Info: figs/value1.jpg  used on input line 80.
 (pdftex.def)             Requested size: 291.35735pt x 218.52974pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2025,19 +2012,15 @@ dist/fonts/enc/dvips/base/8r.enc}
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52966 strings out of 474222
- 1254915 string characters out of 5748734
- 1939975 words of memory out of 5000000
- 74402 multiletter control sequences out of 15000+600000
- 622145 words of font info for 168 fonts, out of 8000000 for 9000
+ 52965 strings out of 474222
+ 1254907 string characters out of 5748734
+ 1936975 words of memory out of 5000000
+ 74401 multiletter control sequences out of 15000+600000
+ 623257 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,20n,109p,1194b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/sha
@@ -2046,10 +2029,10 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 85603 bytes).
+Output written on main.pdf (2 pages, 84524 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
- 7 named destinations out of 1000 (max. 500000)
+ 84 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
+ 6 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
