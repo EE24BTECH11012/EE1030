@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <math.h>
 
-float mp(float, float) ;
 
 int main(void)
 {
+	FILE *ptr; //declaring a pointer
+	ptr=fopen("main.txt", "w"); // creatnig a mew file to write into
+	float mp(float, float) ;
+
 	float x, y;
 	x = (float) mp(-5,-4);
 	y = (float) mp(7,5);
-	printf("%f\n", x);
-	printf("%f\n", y);
-	if ( 2*x + y + 3 == 0 )
-	{
-		printf("The relation 2x+y=3 is satisfied.\n");
-	}
+	fprintf(ptr, "%f\n", x);
+	fprintf(ptr, "%f\n", y); //storing the values in the new file created.
 	return 0;
 }

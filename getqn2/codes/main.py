@@ -7,10 +7,15 @@ c = 7
 d = 5
 mp = rel.mp
 mp.restype = c_float
-print(mp(c_float(a), c_float(b)))
-print(mp(c_float(c), c_float(d)))
 
 # Data for plotting
+filename = 'main.txt'
+
+with open(filename, 'r') as file:
+    data = file.readlines()
+
+print (data) 
+
 x = [-5, -4, mp(c_float(a), c_float(b))]
 y = [7, 5, mp(c_float(c), c_float(d))]
 labels = ['A(-5,-4)', 'B(7,5)', 'C(-6,9)']
