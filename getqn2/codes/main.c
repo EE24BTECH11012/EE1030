@@ -5,7 +5,7 @@
 int main(void)
 {
 	FILE *ptr; //declaring a pointer
-	ptr=fopen("main.txt", "w"); // creatnig a mew file to write into
+	ptr=fopen("main.txt", "w"); // creatnig a new file to write into
 	float mp(float, float) ;
 	float f1(float, float) ;
 	float f2(float, float) ;
