@@ -1,12 +1,19 @@
 from ctypes import *
 import matplotlib.pyplot as plt
-rel = CDLL('./mp.so')
+rel1 = CDLL('./mp.so')
+rel2 = CDLL('./f1.so')
+rel3 = CDLL('./f2.so')
 a = -5
 b = -4
 c = 7
 d = 5
-mp = rel.mp
+mp = rel1.mp
 mp.restype = c_float
+f1 = rel2.f1
+f1.restype = c_float
+f2 = rel3.f2
+f2.restype = c_float
+
 
 # Data for plotting
 filename = 'main.txt'
@@ -16,9 +23,9 @@ with open(filename, 'r') as file:
 
 print (data) 
 
-x = [-5, -4, mp(c_float(a), c_float(b))]
-y = [7, 5, mp(c_float(c), c_float(d))]
-labels = ['A(-5,-4)', 'B(7,5)', 'C(-6,9)']
+x = [-5, -4, mp(c_float(a), c_float(b)), f1(c_float(a), c_float(c)) , f1(c_float(b), c_float(d))]
+y = [7, 5, mp(c_float(c), c_float(d)), f2(c_float(a), c_float(c)), f2(c_float(b), c_float(d))]
+labels = ['A(-5,-4)', 'B(7,5)', 'C', 'D', 'E']
 
 # Create a scatter plot
 plt.scatter(x, y)

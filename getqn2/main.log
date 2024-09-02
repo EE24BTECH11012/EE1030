@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  31 AUG 2024 21:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  2 SEP 2024 01:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1900,8 +1900,13 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 6
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 ) (./tables/table.tex
-Overfull \hbox (107.5056pt too wide) in paragraph at lines 4--16
- [][] 
+Underfull \hbox (badness 10000) in paragraph at lines 60--1
+
+ []
+
+
+Overfull \hbox (107.14561pt too wide) in paragraph at lines 2--13
+ [] 
  []
 
 )
@@ -1915,9 +1920,7 @@ Type  H <return>  for immediate help.
 l.64 Three points \vec
                       {A}, \vec{B} and \vec{C} are said to be collinear if $...
 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1928,9 +1931,7 @@ Type  H <return>  for immediate help.
 l.64 Three points \vec{A}, \vec
                                {B} and \vec{C} are said to be collinear if $...
 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1941,9 +1942,7 @@ Type  H <return>  for immediate help.
 l.64 Three points \vec{A}, \vec{B} and \vec
                                            {C} are said to be collinear if $...
 
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
@@ -1954,348 +1953,223 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Limit controls must follow a math operator.
 \ext@arrow ...x to\wd \tw@ {\unhbox \z@ }}\limits 
                                                   \@ifnotempty {#7}{^{\if 0#...
 l.69 \end{align}
                 
-I'm ignoring this misplaced \limits or \nolimits command.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
 l.69 \end{align}
                 
-I'm guessing that you meant to end an alignment here.
-
+? 
 ! Missing { inserted.
 <inserted text> 
                 {
 l.69 \end{align}
                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
+? 
 ! Missing { inserted.
 <inserted text> 
                 {
 l.69 \end{align}
                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
+? 
 ! Extra }, or forgotten $.
 <recently read> }
                  
 l.69 \end{align}
                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Misplaced alignment tab character &.
 \math@cr@@@ ->&
                \omit \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
 l.69 \end{align}
                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+? 
 ! Misplaced \omit.
 \math@cr@@@ ->&\omit 
                      \global \advance \row@ \@ne \ifst@rred \nonumber \fi \i...
 l.69 \end{align}
                 
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
+? 
 ! Misplaced \cr.
 \math@cr@@@ ... \else \global \@eqnswtrue \fi \cr 
                                                   
 l.69 \end{align}
                 
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+? 
 ! Misplaced \cr.
 \measure@ ...olumn@ \z@ \add@amps \maxfields@ \cr 
                                                   }}\restorecounters@ \ifodd...
 l.69 \end{align}
                 
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+? 
 ! Extra }, or forgotten \endgroup.
 \measure@ ...umn@ \z@ \add@amps \maxfields@ \cr }}
                                                   \restorecounters@ \ifodd \...
 l.69 \end{align}
                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
+? 
 ! Missing number, treated as zero.
 <to be read again> 
                    \relax 
 l.69 \end{align}
                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
+? 
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
 l.69 \end{align}
                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Limit controls must follow a math operator.
 \ext@arrow ...x to\wd \tw@ {\unhbox \z@ }}\limits 
                                                   \@ifnotempty {#7}{^{\if 0#...
 l.69 \end{align}
                 
-I'm ignoring this misplaced \limits or \nolimits command.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing \cr inserted.
 <inserted text> 
                 \cr 
 l.69 \end{align}
                 
-I'm guessing that you meant to end an alignment here.
-
+? 
 ! Missing { inserted.
 <inserted text> 
                 {
 l.69 \end{align}
                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
+? 
 ! Missing { inserted.
 <inserted text> 
                 {
 l.69 \end{align}
                 
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
+? 
 ! Extra }, or forgotten $.
 <recently read> }
                  
 l.69 \end{align}
                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
+? 
 ! Missing } inserted.
 <inserted text> 
                 }
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Missing $$ inserted.
 <to be read again> 
                    \hskip 
 l.69 \end{align}
                 
-Displays can use special alignments (like \eqalignno)
-only if nothing but the alignment itself is between $$'s.
-
+? 
 ! Misplaced \cr.
 \math@cr@@@ ->\cr 
                   
 l.69 \end{align}
                 
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+? 
 ! Misplaced \noalign.
 \math@cr@@ ... \iffalse }\fi \math@cr@@@ \noalign 
                                                   {\vskip #1\relax }
 l.69 \end{align}
                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
+? 
 ! Misplaced \noalign.
 \black@ #1->\noalign 
                      {\ifdim #1>\displaywidth \dimen@ \prevdepth \nointerlin...
 l.69 \end{align}
                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
+? 
 
 Overfull \hbox (354.1953pt too wide) detected at line 69
 []
@@ -2306,31 +2180,19 @@ Overfull \hbox (354.1953pt too wide) detected at line 69
                                                 \ifingather@ \restorealignst...
 l.69 \end{align}
                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
+? 
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.69 \end{align}
                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
+? 
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
 l.69 \end{align}
                 
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
+? 
 <figs/value.jpg, id=31, 462.528pt x 346.896pt>
 File: figs/value.jpg Graphic file (type jpg)
 <use figs/value.jpg>
@@ -2351,10 +2213,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52961 strings out of 474222
- 1254822 string characters out of 5748734
- 1940975 words of memory out of 5000000
- 74399 multiletter control sequences out of 15000+600000
+ 52957 strings out of 474222
+ 1254760 string characters out of 5748734
+ 1939975 words of memory out of 5000000
+ 74396 multiletter control sequences out of 15000+600000
  622145 words of font info for 168 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,18n,109p,1194b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2364,10 +2226,10 @@ exmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 70393 bytes).
+Output written on main.pdf (2 pages, 69321 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 83 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
