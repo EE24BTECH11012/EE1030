@@ -9,6 +9,7 @@ int main(void)
 	float mp(float, float) ;
 	float f1(float, float) ;
 	float f2(float, float) ;
+	float det(int, int, int) ;
 
 	float x, y;
 	x = (float) mp(-5,-4);

@@ -1,53 +1,33 @@
 #include <stdio.h>
-#include <math.h>
+int determinant(int matrix1[3][3]) ;
+int determinant(int matrix2[3][3]) ;
 
-int main(void)
+int main() 
 {
-	int size ;
-	int matrix[size][size] ;
+    int matrix1[3][3] = {
+        {1, 1, 1},
+        {-4, -5, -6},
+        {5, 7, 9}
+    };
+    
+    int det1 = determinant(matrix1);
+    
+    printf("Determinant of the matrix is: %d\n", det1);
 
-matrix[0][0] = 1 ;
-matrix[0][1] = 1 ;
-matrix[0][2] = 1 ;
-matrix[1][0] = -5 ;
-matrix[1][1] = -4 ;
-matrix[1][2] = 0 ;
-matrix[2][0] = 7 ;
-matrix[2][1] = 5 ;
-matrix[2][2] = -3 ;
+       int matrix2[3][3] = {
+        {1, 1, 1},
+        {0, 2, -6},
+        {-3, -7, 9}
+    };
+    
+    int det2 = determinant(matrix2);
+    
+    printf("Determinant of the matrix is: %d\n", det2);
 
-for (int i=0; i<size; i++)
-{
-	for (int j=0; j<size; j++)
-	{
-		printf("%d", matrix[i][j]);
-	}
+   if ( det1 == 0 && det2 == 0 )
+   {
+	   printf("The given points are collinear.\n");
+   }
+    return 0;
 }
-int det ;
 
-det = matrix[0][0]*(matrix[1][1]*matrix[2][2] - matrix[2][1]*matrix[1][2]) - matrix[0][1]*(matrix[1][0]*matrix[2][2] - matrix[2][0]*matrix[1][2]) + matrix[0][2]*(matrix[1][0]*matrix[2][1] - matrix[2][0]*matrix[1][1]) ;
-
-printf("The determinant of the given matrix is %d\n", det) ;
-
-matrix[0][0] = 1 ;
-matrix[0][1] = 1 ;
-matrix[0][2] = 1 ;
-matrix[1][0] = -5 ;
-matrix[1][1] = 1 ;
-matrix[1][2] = 2 ;
-matrix[2][0] = 7 ;
-matrix[2][1] = -5 ;
-matrix[2][2] = -7 ;
-
-printf("The determinant of the given matrix is %d\n", det );
-
-if (det == 0)
-{
-	printf("The points are collinear.\n");
-}
-else
-{
-	printf("The points are not collinear.\n");
-}
-return 0;
-}
