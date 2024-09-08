@@ -29,7 +29,18 @@ plt.scatter(x,y)
 plt.text(x[0], y[0], label[0], fontsize=12, ha='right')
 plt.text(x[1], y[1], label[1], fontsize=12, ha='right')
 plt.text(x[2], y[2], label[2], fontsize=12, ha='right')
+
+
+w = [20, 0] 
+z = [1, -9]
+labell = ['D(20,1)', 'E(0,-9)']
+plt.scatter(w,z)
+plt.text(w[0], z[0], labell[0], fontsize=12, ha='right')
+plt.text(w[1], z[1], labell[1], fontsize=12, ha='right')
+
 plt.plot (x,y,color='red', linestyle='-')
+plt.plot (w,z,color='green', linestyle='-')
 plt.xlabel('X-AXIS')
 plt.ylabel('Y-AXIS')
+plt.grid()
 plt.show()

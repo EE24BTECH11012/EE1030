@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  6 SEP 2024 17:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  8 SEP 2024 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1910,7 +1910,9 @@ Type  H <return>  for immediate help.
 l.61 ...f the line segment joining the points \vec
                                                   {A} \myvec{10,-6} and \vec...
 
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1921,7 +1923,9 @@ Type  H <return>  for immediate help.
 l.61 ... the points \vec{A} \myvec{10,-6} and \vec
                                                   {B} \myvec{\emph{k}, 4} an...
 
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1931,7 +1935,9 @@ Type  H <return>  for immediate help.
                                                   
 l.61 ...f \emph{a}, \emph{b} and the distance \vec
                                                   {AB} . \\
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (./tables/table.tex
 
 ! LaTeX Error: \mathbf allowed only in math mode.
@@ -1942,7 +1948,9 @@ Type  H <return>  for immediate help.
                                                   
 l.8     A & \vec
                 {10,-6}. &  $\vec{M} = \frac{\vec{A} + \vec{B}}{2}$\\
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1952,7 +1960,9 @@ Type  H <return>  for immediate help.
                                                   
 l.10 		B & \vec
                {\emph{k},4} & $A$, $B$, $k$ = ? \\
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1963,7 +1973,9 @@ Type  H <return>  for immediate help.
 l.12 		M & The midpoint of the line-segment \vec
                                                 {AB} with coordinates \vec{\...
 
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1974,7 +1986,9 @@ Type  H <return>  for immediate help.
 l.12 ...ine-segment \vec{AB} with coordinates \vec
                                                   {\emph{a}, \emph{b}} &  $\...
 
-? 
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Overfull \hbox (29.41547pt too wide) in paragraph at lines 4--16
  [][] 
@@ -1995,57 +2009,418 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--65
 
  []
 
-! Display math should end with $$.
-<to be read again> 
-                    
-l.74 ...\boxed {\norm{\vec{AB}}  = 2\sqrt{61}}} $ 
-                                                  \\$$
-? 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {b} &
+                                = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {a} &
+                                = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {k} &
+                                = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {b} &
+                                = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {b} &
+                                                  = -1
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {a} &
+                                = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {a} &
+                                                  = 16
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> \bfseries \emph {k} &
+                                = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...stchoice@false \bfseries \emph {k} &
+                                                  = 22
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+<argument> ...h $\displaystyle \norm {\vec {AB}} &
+                                                  = 2\sqrt {61}$
+l.76 \end{align}
+                
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.75 
-     
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \tex_par:D 
-l.75 
-     
-? 
-<figs/value.jpg, id=46, 462.528pt x 346.896pt>
+<figs/value.jpg, id=44, 462.528pt x 346.896pt>
 File: figs/value.jpg Graphic file (type jpg)
 <use figs/value.jpg>
-Package pdftex.def Info: figs/value.jpg  used on input line 78.
+Package pdftex.def Info: figs/value.jpg  used on input line 80.
 (pdftex.def)             Requested size: 291.35735pt x 218.52974pt.
-[2 <./figs/value.jpg>] (./main.aux)
+ [2 <./figs/value.jpg>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 52964 strings out of 474222
- 1254793 string characters out of 5748734
- 1941975 words of memory out of 5000000
- 74397 multiletter control sequences out of 15000+600000
+ 52977 strings out of 474222
+ 1254981 string characters out of 5748734
+ 1938975 words of memory out of 5000000
+ 74399 multiletter control sequences out of 15000+600000
  626207 words of font info for 174 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,12n,109p,1194b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,17n,109p,1194b,902s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fo
@@ -2054,10 +2429,10 @@ blic/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 76952 bytes).
+Output written on main.pdf (2 pages, 87204 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
