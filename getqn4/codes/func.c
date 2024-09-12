@@ -1,7 +1,6 @@
 #include <math.h>
 
-float mod(float num1, float num2, float num3, float num4, float num5, float num6, float num7, float num8, float num9 ) 
+float mod( float point1[3], float point2[3], float point3[3]) 
 {
-	return sqrt( pow((num1+num4+num7),2) + pow((num2+num5+num7),2) + pow((num3+num6+num9),2) ) ;
+	return sqrt(pow(point1[0]+point2[0]+point3[0], 2) + pow(point1[1]+point2[1]+point3[1], 2) + pow(point1[2]+point2[2]+point3[2], 2)) ;
 }
-		
