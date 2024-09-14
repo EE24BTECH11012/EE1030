@@ -37,6 +37,19 @@ ax.text(x[5],y[5],z[5],label[2])
 ax.text(x[6],y[6],z[6],label[4])
 ax.text(x[7],y[7],z[7],label[3])
 ax.plot(x, y, z, color='red', linestyle='-', label='D=A+B+C')
+
+x1 = [2, 3,2, 3 ]
+y1 = [3, -4,3, 2]
+z1 = [-4, -5,-4, -3]
+
+ax.plot(x1, y1, z1, color='blue', linestyle=':')
+
+x2 = [8, 2,8, 3,8, 3 ]
+y2 = [1, 3,1, -4,1, 2]
+z2 = [-12, -4,-12, -5,-12, -3]
+
+ax.plot(x2, y2, z2, color='green', linestyle=':')
+
 ax.set_xlabel('X axis')
 ax.set_ylabel('Y axis')
 ax.set_zlabel('Z axis')
