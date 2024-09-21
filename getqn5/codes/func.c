@@ -16,20 +16,20 @@ void point_gen(FILE *fptr, double **A, double **B, int no_rows, int no_cols, int
     }
 }
 
-void twoDtriangle_gen(double sideAB, double sideBC, double sideCA, char filename[]) {
-    double xA, yA, xB, yB, xC, yC;
+void twoDtriangle_gen(double sideAB, double sideBC, double sideCA ) {
+    double x[3], y[3] ;
 
     // Correct formula for angle A
     double angleA = acos(((sideAB * sideAB) + (sideCA * sideCA) - (sideBC * sideBC)) / (2 * sideAB * sideCA));
 
-    xA = 0; yA = 0;
-    xB = sideAB; yB = 0;
-    xC = cos(angleA) * sideCA; yC = sin(angleA) * sideCA;
+    x[0] = 0; y[0] = 0;
+    x[1] = sideAB; y[1] = 0;
+    x[2] = cos(angleA) * sideCA; y[2] = sin(angleA) * sideCA;
 
     int m = 2, n = 1;
 
     // Open the file for writing
-    FILE *fptr = fopen(filename, "w");
+    FILE *fptr = fopen("main.txt", "w");
     if (fptr == NULL) {
         printf("Error opening file!\n");
         return;  // Return early if file cannot be opened
@@ -40,12 +40,12 @@ void twoDtriangle_gen(double sideAB, double sideBC, double sideCA, char filename
     double **B = createMat(m, n);
     double **C = createMat(m, n);
 
-    A[0][0] = xA;
-    A[1][0] = yA;
-    B[0][0] = xB;
-    B[1][0] = yB;
-    C[0][0] = xC;
-    C[1][0] = yC;
+    A[0][0] = x[0];
+    A[1][0] = y[0];
+    B[0][0] = x[1];
+    B[1][0] = y[1];
+    C[0][0] = x[2];
+    C[1][0] = y[2];
 
     // Generate points along the triangle's edges
     point_gen(fptr, A, B, m, n, 20);

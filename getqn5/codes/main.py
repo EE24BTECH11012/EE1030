@@ -24,5 +24,5 @@ def plot_triangle(filename, file_no=""):
     # Save the plot to figs directory
     plt.savefig('../figs/fig' + str(file_no) + '.jpg')
 
-plot_triangle('triangle.txt')
+plot_triangle('main.txt')
 plt.show()

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  21 SEP 2024 01:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  21 SEP 2024 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1914,7 +1914,10 @@ Type  H <return>  for immediate help.
                                                   
 l.69 \end{table} \\ \\
                        \\
-? 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1924,7 +1927,10 @@ Type  H <return>  for immediate help.
                                                   
 l.69 \end{table} \\ \\ \\
                          
-? 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1934,7 +1940,10 @@ Type  H <return>  for immediate help.
                                                   
 l.70 
      
-? 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 <figs/figure.jpg, id=31, 462.528pt x 346.896pt>
 File: figs/figure.jpg Graphic file (type jpg)
 <use figs/figure.jpg>
