@@ -1,31 +1,24 @@
 import matplotlib.pyplot as plt
 
-# Define the endpoints for the first line
-x1_1, y1_1 = -2, 2
-x2_1, y2_1 = 2, 2
-
-# Define the endpoints for the second line
-x1_2, y1_2 = 2, -4
-x2_2, y2_2 = 2, 4
 
 # Create a list of x and y values for both lines
-x_values_1 = [x1_1, x2_1]
-y_values_1 = [y1_1, y2_1]
+x1 = [-4, 4]
+y1 = [2, 2]
 
-x_values_2 = [x1_2, x2_2]
-y_values_2 = [y1_2, y2_2]
+x2 = [2, 2]
+y2 = [-4, 4]
 
 # Create the plot
-plt.plot(x_values_1, y_values_1, marker='o', label='Direction (1,0)', color='blue')  # First line
-plt.plot(x_values_2, y_values_2, marker='o', label='Direction (0,1)', color='orange')  # Second line
+plt.plot(x1, y1, marker='o', label='y=2 with Direction (1,0)', color='blue')  # First line
+plt.plot(x2, y2, marker='o', label='x=2 with Direction (0,1)', color='orange')  # Second line
 
 # Label the points for the first line
-plt.text(x1_1, y1_1, f'({x1_1}, {y1_1})', fontsize=10, ha='right')
-plt.text(x2_1, y2_1, f'({x2_1}, {y2_1})', fontsize=10, ha='left')
+plt.text(x1[0], y1[0], f'({x1[0]}, {y1[0]})', fontsize=10, ha='right')
+plt.text(x1[1], y1[1], f'({x1[1]}, {y1[1]})', fontsize=10, ha='left')
 
 # Label the points for the second line
-plt.text(x1_2, y1_2, f'({x1_2}, {y1_2})', fontsize=10, ha='right')
-plt.text(x2_2, y2_2, f'({x2_2}, {y2_2})', fontsize=10, ha='left')
+plt.text(x2[0], y2[0], f'({x2[0]}, {y2[0]})', fontsize=10, ha='right')
+plt.text(x2[1], y2[1], f'({x2[1]}, {y2[1]})', fontsize=10, ha='left')
 
 # Add labels, title, and legend
 plt.title("Plot of Two Lines with Labeled Points")
