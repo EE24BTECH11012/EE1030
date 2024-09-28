@@ -12,9 +12,16 @@ int main() {
         perror("Error opening the file");
         return 1;
     }
-
-    fprintf(ptr, "%lf\n", Area(n, centre, otherPoint));
-    fclose(ptr); // Always good to close the file
+    double k ;
+	
+	for ( k=0; k<1; k+=0.05 )
+	{
+		double x = centre[0] + 5*k ;
+		double y = centre[0] + 5*sqrt(1-pow(k,2)) ; 
+		fprintf(ptr, "(%lf, %lf)\n", x, y) ;
+	}
+    fprintf(ptr, "%lf\n", area(n, centre, otherPoint));
+    fclose(ptr);
     printf("The values have been printed to main.txt\n");
 
     return 0;

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  28 SEP 2024 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  28 SEP 2024 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1913,10 +1913,7 @@ Type  H <return>  for immediate help.
                                                   
 l.68 \textbf
             {SOLUTION} \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 
 Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
@@ -1932,9 +1929,7 @@ Type  H <return>  for immediate help.
                                                   
 l.5     \vec
             {A} & \myvec{1\\2}   \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
 
@@ -1944,9 +1939,7 @@ Type  H <return>  for immediate help.
                                                   
 l.7     \vec
             {B} & \myvec{4\\6} \\
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 )
 
 ! LaTeX Error: There's no line here to end.
@@ -1957,10 +1950,7 @@ Type  H <return>  for immediate help.
                                                   
 l.75 \end{table} \\ \\
                        \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1970,10 +1960,7 @@ Type  H <return>  for immediate help.
                                                   
 l.75 \end{table} \\ \\ \\
                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1983,10 +1970,7 @@ Type  H <return>  for immediate help.
                                                   
 l.76 
      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+? 
 <figs/figure.jpg, id=31, 433.62pt x 433.62pt>
 File: figs/figure.jpg Graphic file (type jpg)
 <use figs/figure.jpg>

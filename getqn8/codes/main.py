@@ -1,5 +1,21 @@
+from ctypes import*
 import matplotlib.pyplot as plt
 import numpy as np
+rel = CDLL('./func.so')
+a = np.array(([1,2])).reshape(1,-1)
+b = np.array(([4,6])).reshape(1,-1)
+c = 2
+area = rel.area
+area.restype = c_double
+
+filename = 'main.txt'
+
+with open(filename,'r') as file:
+    data = file.readlines()
+    print (data)
+
+dist = 78.5
+print(dist)
 
 center = (1, 2)
 point = (4, 6)
