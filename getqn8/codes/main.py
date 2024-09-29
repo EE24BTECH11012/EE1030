@@ -1,44 +1,27 @@
-from ctypes import*
-import matplotlib.pyplot as plt
 import numpy as np
-rel = CDLL('./func.so')
-a = np.array(([1,2])).reshape(1,-1)
-b = np.array(([4,6])).reshape(1,-1)
-c = 2
-area = rel.area
-area.restype = c_double
+import matplotlib.pyplot as ply
 
-filename = 'main.txt'
+points = np.loadtxt("main.txt", delimiter=',',max_rows=len(list(open("./main.txt")))-1)
 
-with open(filename,'r') as file:
-    data = file.readlines()
-    print (data)
+x = points[:,0]
+y = points[:,1]
 
-dist = 78.5
-print(dist)
+A = np.array([1,2])
+B = np.array([1,6])
+C = np.array([-4,2])
+D = np.array([4,1])
+ply.plot(x, y, label='Circle')
 
-center = (1, 2)
-point = (4, 6)
-label=('A(1,2)', 'B(4,6)')
-radius = np.sqrt((point[0] - center[0])**2 + (point[1] - center[1])**2)
+ply.scatter(A[0], A[1], color='green', marker='o', label='Point A (1,2)')
+ply.scatter(B[0], B[1], color='red', marker='o', label='Point B (1,6)')
+ply.scatter(C[0], C[1], color='purple', marker='o', label='Point C (-4,2)')
+ply.scatter(D[0], D[1], color='orange', marker='o', label='Point D (4,1)')
 
-theta = np.linspace(0, 2 * np.pi, 100)
-x = center[0] + radius * np.cos(theta)
-y = center[1] + radius * np.sin(theta)
-
-plt.figure(figsize=(6, 6))
-plt.plot(x, y, label='Circle')
-plt.scatter(*center, color='red', label='Center (1, 2)')
-plt.scatter(*point, color='blue', label='Point (4, 6)')
-plt.text(center[0], center[1], label[0], color='red')
-plt.text(point[0], point[1], label[1], color='blue')
-plt.xlim(-5, 10)  
-plt.ylim(-5, 10) 
-plt.gca().set_aspect('equal', adjustable='box') 
-plt.axhline(0, color='black',linewidth=0.5, ls='--')
-plt.axvline(0, color='black',linewidth=0.5, ls='--')
-plt.grid(color = 'gray', linestyle = '--', linewidth = 0.5)
-plt.title('Circle with Center (1, 2) and Point (4, 6)')
-plt.legend()
-plt.show()
-
+ply.xlabel("X-axis")
+ply.ylabel("Y-Axis")
+ply.title("Points A, B")
+ply.grid(True)
+ply.legend()
+ply.axis("equal")
+ply.savefig('../figs/fig.jpg')
+ply.show()

@@ -14,12 +14,21 @@ int main() {
     }
     double k ;
 	
-	for ( k=0; k<1; k+=0.05 )
+	for ( k=-1; k<=1; k+=0.05 )
 	{
 		double x = centre[0] + 5*k ;
-		double y = centre[0] + 5*sqrt(1-pow(k,2)) ; 
-		fprintf(ptr, "(%lf, %lf)\n", x, y) ;
+		double y1 = centre[0] + 5*sqrt(1-pow(k,2)) ;
+		fprintf(ptr, "%lf,%lf\n", x, y1) ;	
 	}
+	for ( k=1; k>=-1; k-=0.05 )
+	{
+		double x = centre[0] + 5*k ;
+		double y1 = centre[0] - 5*sqrt(1-pow(k,2)) ;
+		fprintf(ptr, "%lf,%lf\n", x, y1) ;	
+	}
+	fprintf(ptr, "-1,5.60") ;
+
+	
     fprintf(ptr, "%lf\n", area(n, centre, otherPoint));
     fclose(ptr);
     printf("The values have been printed to main.txt\n");
