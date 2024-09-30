@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  30 SEP 2024 18:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  30 SEP 2024 23:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1908,8 +1908,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--63
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.8 \vec
-        {u} = ce^2\vec{n} - \norm{n}^2\vec{F} ,\\
+l.5 	$ g(\vec{x}) &
+                    \vec{x^TVx} + 2\vec{u^Tx} + f = 0 $ &
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1923,37 +1923,36 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 \vec
-        {u} = ce^2\vec{n} - \norm{n}^2\vec{F} ,\\
+l.5 	$ g(\vec{x}) & \vec
+                        {x^TVx} + 2\vec{u^Tx} + f = 0 $ &
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.8 \vec{u} = ce^
-                 2\vec{n} - \norm{n}^2\vec{F} ,\\
+l.5 	$ g(\vec{x}) & \vec{x^
+                           TVx} + 2\vec{u^Tx} + f = 0 $ &
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.9 f
-      = \norm{n}^2\norm{F}^2 - c^2e^2 $ \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+! Extra }, or forgotten $.
+l.5 	$ g(\vec{x}) & \vec{x^TVx}
+                                + 2\vec{u^Tx} + f = 0 $ &
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
-! Missing $ inserted.
+! Missing } inserted.
 <inserted text> 
-                $
-l.9 f = \norm{n}
-                ^2\norm{F}^2 - c^2e^2 $ \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+                }
+l.5 ...x}) & \vec{x^TVx} + 2\vec{u^Tx} + f = 0 $ &
+                                                  
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
 
 
 ! LaTeX Error: \mathbf allowed only in math mode.
@@ -1962,7 +1961,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...nts of intersection of the line $$ L: \vec
+l.10 ...of intersection of the line L & $$ L: \vec
                                                   {x} = \vec{h} + \kappa\vec...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1975,7 +1974,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 ...ersection of the line $$ L: \vec{x} = \vec
+l.10 ...ction of the line L & $$ L: \vec{x} = \vec
                                                   {h} + \kappa\vec{m},  \kap...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -1984,7 +1983,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.11 ... the line $$ L: \vec{x} = \vec{h} + \kappa
+l.10 ... line L & $$ L: \vec{x} = \vec{h} + \kappa
                                                   \vec{m},  \kappa \in \math...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1992,7 +1991,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.12 w
+l.11 w
       ith the conic section as above are given by $$ \vec{x}_i = \vec{h} + \...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2007,7 +2006,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.12 ...onic section as above are given by $$ \vec
+l.11 ...onic section as above are given by $$ \vec
                                                   {x}_i = \vec{h} + \kappa_i...
 
 You're in trouble here.  Try typing  <return>  to proceed.
@@ -2016,7 +2015,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.12 ... section as above are given by $$ \vec{x}_
+l.11 ... section as above are given by $$ \vec{x}_
                                                   i = \vec{h} + \kappa_i\vec...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2024,8 +2023,8 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.13 w
-      here \\
+l.11 ...c{x}_i = \vec{h} + \kappa_i\vec{m} $$ \\ &
+                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2035,7 +2034,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.14 	$$ \kappa
+l.12 	$$ \kappa
                _i = \frac{1}{\vec{m^TVm}}\brak{\vec{-m^T\brak{Vh+u}} \pm \sq...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2043,7 +2042,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.15 \hline
+l.13 \hline
            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2052,6 +2051,10 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
+Overfull \hbox (416.52463pt too wide) in paragraph at lines 1--67
+ [][] 
+ []
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2106,8 +2109,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--84
 
  []
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}
+
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
 ! Missing $ inserted.
@@ -2157,11 +2163,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  52975 strings out of 474222
  1254932 string characters out of 5748734
- 1945975 words of memory out of 5000000
+ 1948975 words of memory out of 5000000
  74398 multiletter control sequences out of 15000+600000
  625983 words of font info for 173 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,18n,109p,1194b,910s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,18n,109p,1194b,906s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
 ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/sh
@@ -2170,7 +2176,7 @@ texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
 fb>
-Output written on main.pdf (2 pages, 87457 bytes).
+Output written on main.pdf (2 pages, 88112 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
