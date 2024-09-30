@@ -1,8 +1,20 @@
 #include <stdio.h>
 #include <math.h>
 
-double area(double a, double point1[2], double point2[2])
+double function(double x, double a)
 {
-	return 2*a*(point2[1]*point2[1] - point1[1]*point1[1]) ;
+	return 4*a*x ;
 }
+
+double area(double lower_limit, double upper_limit)
+{
+	double sum=0 ;
+	double function(double, double) ;
+	for ( double i = lower_limit; i<=upper_limit; i+=0.01 )
+	{
+		sum += function(i+0.50, 1) ;
+	}
+	return sum ;
+}
+
 

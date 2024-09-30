@@ -16,7 +16,7 @@ int main()
 		double y = a*t*t ;
 		fprintf(ptr, "%.2lf %lf\n", x, y) ;
 	}
-	fprintf(ptr, "%.2lf\n", area(a, point1, point2)) ;
+	fprintf(ptr, "%.2lf\n", area(point1[1], point2[1])) ;
 	fclose(ptr) ;
 	return 0;
 }
