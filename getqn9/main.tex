@@ -1,0 +1,95 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{9.2.4}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+\textbf{QUESTION} \\
+Find the area of the region bounded by the curves $ x^2 = 4y $, $ y=2$, $y=4$ and the y-axis in the first quadrant. \\
+\textbf{SOLUTION} \\
+
+\begin{table}[h!]
+	\centering
+        \input{tables/form.tex}
+	\caption{Formulae Used}
+	\label{tab9.2.4}
+\end{table} \\ \\ \\
+Substituting the given values, we have \\
+\begin{align}
+	\vec{V} &= \myvec{ 1 & 0 \\ 0 & 0 } \\
+	\vec{u} &= \myvec{ 0 \\ -2 } \\
+	f &= 0 \\
+\end{align}
+Substituting the values, we get the point of intersection as \\
+\begin{align}
+	\kappa_i &= -\myvec{1&0}\myvec{0 + 0 \\ 2 + -2} \pm \sqrt{\sbrak{\myvec{1&0}\myvec{0+0\\ 2+-2} }^2 + 4\brak{1}} \\
+	\kappa_i &= 2\sqrt{2} \\
+\end{align}
+Hence, the point of intersection is \myvec{2\sqrt{2} \\ 2} \\
+Similarly, the other point is given by \myvec{ 4 \\ 4 } .\\
+The area bounded by the curve and the line is \\
+\begin{align}
+	\int_{2}^{4} \brak{2\sqrt{y}} dy &= \frac{4}{3}\brak{8-2\sqrt{2}} \\
+	&= \frac{\brak{32 - 8\sqrt{2}}}{3} \\
+\end{align}
+Hence the required area is \frac{\brak{32-8\sqrt{2}}}{3} .
+	
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figs/fig.jpg}
+	\caption{A plot of the given question.}
+\end{figure}
+\end{document}
