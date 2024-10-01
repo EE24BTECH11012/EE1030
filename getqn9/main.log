@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  30 SEP 2024 23:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.7)  1 OCT 2024 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2116,50 +2116,19 @@ Underfull \vbox (badness 1371) has occurred while \output is active []
 -dist/fonts/enc/dvips/base/8r.enc}
 
 ]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.88 ...ired area is \frac{\brak{32-8\sqrt{2}}}{3}
-                                                   .
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.88 ...ired area is \frac{\brak{32-8\sqrt{2}}}{3}
-                                                   .
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.89 	
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
 <figs/fig.jpg, id=52, 462.528pt x 346.896pt>
 File: figs/fig.jpg Graphic file (type jpg)
 <use figs/fig.jpg>
 Package pdftex.def Info: figs/fig.jpg  used on input line 92.
 (pdftex.def)             Requested size: 291.35735pt x 218.52974pt.
-[2 <./figs/fig.jpg>] (./main.aux)
+ [2 <./figs/fig.jpg>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 88 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
  52975 strings out of 474222
  1254932 string characters out of 5748734
@@ -2167,16 +2136,15 @@ Here is how much of TeX's memory you used:
  74398 multiletter control sequences out of 15000+600000
  625983 words of font info for 173 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,18n,109p,1194b,906s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symb
-ols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.p
-fb>
-Output written on main.pdf (2 pages, 88112 bytes).
+ 109i,18n,109p,1194b,902s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (2 pages, 88058 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
