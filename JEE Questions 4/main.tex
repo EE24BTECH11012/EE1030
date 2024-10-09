@@ -1,0 +1,133 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE Questions 4}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+
+ \item Let in a right triangle, the smallest angle be $\theta$. If a triangle formed by taking the reciprocal of the sides is also a right angled triangle, then $\sin{\theta}$ is equal to :
+	 \begin{enumerate}
+			 \begin{multicols}{4}
+			 \item $ \frac{\sqrt{5} + 1}{4} $
+			 \item $ \frac{\sqrt{5} - 1}{2} $
+			 \item $ \frac{\sqrt{2} - 1}{2} $
+			 \item $ \frac{\sqrt{5} - 1}{4} $
+			 \end{multicols}
+	 \end{enumerate}
+ \item If $\myvec{\alpha , \beta}$ is a point on $y^2=6x$, that is closest to $\myvec{3,\frac{3}{2}}$ then find 2 $ \brak{\alpha+\beta} $
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 6
+				\item 9
+				\item 7
+				\item 5
+				\end{multicols}
+		\end{enumerate}
+ \item Consider the line $\vec{L}$ given by the equation $\frac{x-3}{2} = \frac{y-1}{1} = \frac{z-2}{1}$. Let Q be the mirror image of the point $\myvec{2,3,-1}$ with respect to $\vec{L}$. Let a plane $\vec{P}$ be such that it passes through Q, and the line $\vec{L}$ is perpendicular to $\vec{P}$. Then which of the following points is on the plane $\vec{P}$ ?
+	 \begin{enumerate}
+			 \begin{multicols}{4}
+			 \item $\myvec{-1,1,2}$
+			 \item $\myvec{1,1,1}$
+			 \item $\myvec{1,1,2}$
+			 \item $\myvec{1,2,2}$
+			 \end{multicols}
+	 \end{enumerate}
+ \item Let $ g(t) = \int_{\frac{- \pi}{2}}^{\frac{\pi}{2}} \cos{\brak{\frac{\pi}{4}t + f(x)}} dx$, where $f(x) = \log{\brak{x + \sqrt{x^2 + 1}}}$, x $\in \vec{R}$. Then which of the following is correct ?
+	 \begin{enumerate}
+			 \begin{multicols}{4}
+			 \item $g(1) = g(0)$
+			 \item $\sqrt{2}g(1) = g(0)$
+			 \item $g(1) = \sqrt{2}g(0)$
+			 \item $g(1) + g(0) = 0$
+			 \end{multicols}
+	 \end{enumerate}
+ \item Let P be a variable point on the parabola $y=4x^2+1$.Then the locus of the mid-point of the point P and the foot of perpendicular drawn from the point P to the line $y=x$ is :
+	 \begin{enumerate}
+		 \item $\brak{3x-y}^2 + \brak{x-3y} + 2 = 0$
+		 \item $2 \brak{3x-y}^2 + \brak{x-3y} + 2 = 0$
+		 \item $\brak{3x-y}^2 + 2\brak{x-3y} + 2 = 0$
+		 \item $2 \brak{x-3y}^2 + \brak{3x-y} + 2 = 0$
+	 \end{enumerate}
+\end{enumerate}
+
+\section{Integer-Type Questions}
+\begin{enumerate}
+	\item The sum of all the local minimum values of the twice differentiable function $ f : \vec{R} \rightarrow \vec{R} $ defined by $ f(x) = x^3 - 3x^2 - \frac{3 f^{\prime \prime}\brak{2}}{2}x + f^{\prime \prime}\brak{1}$ is :
+
+	\item For natural numbers m, n if $\brak{1-y}^m\brak{1+y}^n = 1 + a_{1}y + a_{2}y^{2} + \dots + a_{m+n}y^{m+n}$ and $a_{1} = a_{2} = 10$ then he value of \brak{m+n} is equal to :
+
+	\item The value of 21 $\tan \brak{{2 \tan^{-1}{\frac{3}{5} + \sin^{-1}{\frac{5}{13}}}}}$ is :
+
+	\item Let a curve $ y = y(x)$ be givem by the solutio of the differential equation $$\cos{\brak{\frac{1}{2}\cos^{-1}{e^{-x}}}} dx = \sqrt{e^{2x} - 1} dy $$If it intersects y-axis at $y=-1$ and the intersection point of the curve with the x-axis is $\myvec{\alpha , 0}$, then $e^{\alpha}$ is equal to :
+	\item For p $\geq$ 0, a vector $\vec{v_2} = 2\vec{i} + \brak{p+1}\vec{j}$ is obtained by rotating the vector $\vec{v_1} = \sqrt{3}p\vec{i} + \vec{j}$ by an angle $\theta$ about the origin in counter clockwise direction. If $\tan{\theta} = \frac{\alpha\sqrt{3} - 2}{4\sqrt{3} + 3}$, then the value of $\alpha$ is equal to :
+	\item Consider a triangle with vertices $\vec{A} \myvec{-2,3}, \vec{B} \myvec{1,9}, \vec{C} \myvec{3,8}$. If a line $\vec{L}$ passing through the circumcentre of the triangle ABC, bisects line BC, and intersects y-axis at point $\myvec{0,\frac{\alpha}{2}}$ then the value of real number $\alpha$ is :
+	\item For k $\in \vec{N}$, let $$ \frac{1}{\alpha(\alpha +1)(\alpha +2)\dots(\alpha +20)} = \sum_{k=0}^{20} \frac{A_k}{\alpha + k} $$ where $\alpha>0$.Then the value of 100 $\brak{\frac{A_{14} + A_{15}}{A_{13}}}^2 $ is :
+	\item Let $\cbrak{a_{n}}_{n=1}^{\infty}$ be a sequence such that $a_1 = 1$, $a_2 = 1$ and $a_{n+2} = 2a_{n+1} + a_{n}$ for all $n \geq 1$. Then the value of $47 \sum_{n=1}^{\infty} \frac{a_{n}}{2^{3n}}$ is equal to :
+	\item Let $r_{1}$ and $r_{2}$ be the radii of the largest and smallest circles respectively which pass through the point $\myvec{-4,1}$ and having their centres on the circumference of the circle $ x^2 + y^2 + 2x + 4y - 4 = 0$ If $\frac{r_{1}}{r_{2}} = a + b\sqrt{2}$, then a + b is equal to 
+	\item The absolute value of $k$ $ \in \vec{R}$, for which the following system of linear equations 
+		\begin{align}
+			3x - y + 4z &= 3 \\ 
+			x + 2y - 3z &= -2 \\
+			6x + 5y + kz &= -3 
+		\end{align}
+		has infinitely many solutions is :
+\end{enumerate}
+\end{document}
