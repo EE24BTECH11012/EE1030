@@ -1,0 +1,203 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 2}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+	\item In a 3-D orthotropic material, the number of elastic constants in linear stress-strain relationship is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 3
+				\item 5
+				\item 9
+				\item 21
+				\end{multicols}
+		\end{enumerate}
+	\item The compatibility conditioons in theory of wlasticity ensure that
+		\begin{enumerate}
+			\item there is compatibility between various direct and shear stress
+			\item relationships between stresses and strains are consistent with constitutive relations
+			\item displacemets are single-valued and continuous
+			\item stresses satisfy bi-harmonic equation
+		\end{enumerate}
+	\item In a spring-mass-damper single degree of freedom system, the mass is 2kg and the undamped natural frequencyy is 20Hz. The critical damping constant of the system is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $ 160 \pi N-s/m $
+				\item $ 80 \pi N-s/m $
+				\item $ 1 N-s/m $
+				\item $ 0 N-s/m $
+				\end{multicols}
+		\end{enumerate}
+	\item Which of the following quantities remains constant for a satellite in an elliptical orbit around the earth ?
+		\begin{enumerate}
+			\item Kinetic energy
+			\item Product of speed and radial distance from the centre of the earth.
+			\item Rate of area swept by the radial vecor from the centre of the orbit.
+			\item Rate of area by the radial vector from the centre of the earth.
+		\end{enumerate}
+	\item A planet is observed to be at its slowest when it is at a distance $r_1$ from the sum and its fastest when it is at a distance $r_2$ from the sun. The eccentricity $e$ of the planet's orbit is given by
+		\begin{enumerate}
+				\begin{multicols}{4}
+			\item $ e = \frac{r_1}{r_2} $
+			\item $ e = \frac{r_1 - r_2}{r_1 + r_2} $
+			\item $ e = \frac{r_2}{r_1} $
+			\item $ e = \frac{r_1 + r_2}{r_1 - r_2} $
+				\end{multicols}
+		\end{enumerate}
+	\item The function $f\brak{x,y,z} = \frac{1}{2} x^2y^2z^2 $ satisfies
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item grad $f=0$
+				\item div(grad $f$) =0
+				\item curl(grad $f$) = 0
+				\item grad(div(grad $f$))=0
+				\end{multicols}
+		\end{enumerate}
+	\item Which of the following is true for all choices of vectors $\vec{p}, \vec{q}, \vec{r}$ ?
+		\begin{enumerate}
+			\item $ \vec{p} \times \vec{q} + \vec{q} \times \vec{r} + \vec{p} \times \vec{r} = 0 $
+			\item $ \brak{\vec{p} \cdot \vec{q}}\vec{r} +  \brak{\vec{q} \cdot \vec{r}}\vec{p} + \brak{\vec{p} \cdot \vec{r}}\vec{q} = 0 $
+			\item $ \vec{p} \cdot \brak{\vec{q} \times \vec{r}} + \vec{q} \cdot \brak{\vec{r} \times \vec{p}} + \vec{r} \cdot \brak{\vec{p} \times \vec{q}} =0 $
+			\item $ \vec{p} \times \brak{\vec{q} \times \vec{r}} + \vec{q} \times \brak{\vec{r} \times \vec{p}} + \vec{r} \times \brak{\vec{p} \times \vec{q}} =0 $
+		\end{enumerate}
+	\item The value of the line integral $ \frac{1}{2 \pi} \int \brak{xdy - ydx} $ taken anti-clockwise along a circle of unit radius is
+		\begin{enumerate}
+				\begin{multicols}{4}
+			\item 0.5
+			\item 1
+			\item 2
+			\item $ \pi$
+				\end{multicols}
+		\end{enumerate}
+	\item Which of the following is a solution of $ \frac{d^2y}{dx^2} + 2 \frac{dy}{dx} + y = 0 $ ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $ e^{-x} + xe^{-x} $
+				\item $ e^{x} + xe^x $
+				\item $ e^x + e^{-x} $
+				\item $ e^{-x} + xe^x $
+				\end{multicols}
+		\end{enumerate}
+	\item Suppose the non-constant functions F(x) and G(t) satisfy $\frac{d^2F}{dx^2} + p^2F = 0$, $\frac{dG}{dt}+ c^2p^2G = 0$, where p and c are constants. Then the function $u(x,t) = F(x)G(t)$ definitely satisfies 
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\frac{ \partial ^2u}{\partial t^2} = c^2 \frac{\partial ^u}{\partial x^2} $
+				\item $\frac{\partial u}{\partial x} = c^2 \frac{\partial ^2u}{\partial x^2}$
+				\item $\triangledown ^2 u = 0$
+				\item $ \frac{\partial ^2u}{\partial t^2} + c^2u^2 = 0 $
+				\end{multicols}
+		\end{enumerate}
+	\item The following set of equations $$ \myvec{1 && 1 && 2 \\ 1 && 0 && 1 \\ 0 && 1 && 1} \myvec{x_1 \\ x_2 \\ x_3} = \myvec{1 \\ -1 \\ 0} $$ has
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item no solution
+				\item a unique solution
+				\item two solutions
+				\item infinite solutions
+				\end{multicols}
+		\end{enumerate}
+	\item The function $ f(x) = x^2 - 5x + 6 $
+		\begin{enumerate}
+				\item has its maximum value at x=2.0
+				\item has its maximum value value at x=2.5
+				\item is increasing on the interval (2.0, 2.5)
+				\item is increasing on the interval (2.5, 3.0)
+		\end{enumerate}
+	\item Let Y(s) denote the Laplace Transform L(y(t)) of the function $ y(t) = cosh(at)sin(at) $. Then
+		\begin{enumerate}
+			\item $L\brak{\frac{dy}{dt}} = \frac{dY}{ds}, L(ty(t)) = sY(s) $
+			\item $L\brak{\frac{dy}{dt}} = sY(s) , L(ty(t)) = -\frac{dY}{ds} $
+			\item $L\brak{\frac{dy}{dt}} = \frac{dY}{ds}, L(ty(t)) = Y(s-1) $
+			\item $L\brak{\frac{dy}{dt}} = \frac{dY}{ds}, L(ty(t)) = e^{as}Y(s) $
+		\end{enumerate}
+	\item The velocity required for a spacecraft to escape earth's gravitational field depends on
+		\begin{enumerate}
+			\item the mass of the spacecraft
+			\item the distance between eartg's centre and the spacecraft
+			\item the earth's rotational speed about its own axis
+			\item the earth's orbital speed
+		\end{enumerate}
+	\item Which of the following statements is TRUE as the altitude increases in the stratosphere of the International Standard Atmosphere ?
+		\begin{enumerate}
+			\item Temperature increases and the dynamic viscosity decreases
+			\item Temperature increases and pressure increases
+			\item Temperature decreases and sound speed increases
+			\item Temperature decreases and density decreases
+		\end{enumerate}
+	\item Which of the following statement is TRUE ?
+		\begin{enumerate}
+			\item Wing dihedral reduces roll stability while a low wing increases roll stability
+			\item Wing dihedral increases roll stability while a low wing increases roll stability
+			\item Wing dihedral, as well as long wing reduces roll stability
+			\item Wing dihedral, as well as long wing increases roll staility.
+		\end{enumerate}
+	\item The figure below shows the variation of $C_m$ versus $\alpha$ for an aircraft for three combinations of elevator deflections and locationsof centre of gravity. In the figure, lines P and Q are parallel, while lines Q and R have the same intercept on the $C_m$ axis.
+		\input{figs/fig1.tex}
+		Which of the following is true ?
+		\begin{enumerate}
+			\item Lines P and Q correspond to the same centre of gravity location.
+			\item Lines Q and R correspond to the same centre of gravity location.
+			\item Lines P and R correspond to the same elvator deflection.
+			\item Lines P and R correspond to the same centre of gravity location.
+		\end{enumerate}
+\end{enumerate}
+\end{document}
