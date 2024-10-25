@@ -1,0 +1,16 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw  (2,14.75) rectangle (2.25,9);
+\draw  (2,14.5) rectangle (4.75,14.75);
+\draw  (2,9) rectangle (4.75,9.25);
+\draw  (2.25,13.25) rectangle (0.75,13.5);
+\draw [->, >=Stealth] (2,14.5) -- (2,15.5);
+\draw [->, >=Stealth] (0.75,12) -- (6.5,12);
+\draw [<->, >=Stealth, dashed] (5.5,12) -- (5.5,14.75)node[pos=0.5, fill=white]{h};
+\draw [<->, >=Stealth, dashed] (2,8.75) -- (4.75,8.75)node[pos=0.5, fill=white]{h};
+\draw  (2.25,10.5) rectangle (0.75,10.75);
+\draw [<->, >=Stealth, dashed] (0.75,12) -- (0.75,10.75)node[pos=0.5, fill=white]{h/2};
+\draw [<->, >=Stealth, dashed] (0.75,10.25) -- (2.25,10.25)node[pos=0.5, fill=white]{h/2};
+\node [font=\small] at (6.75,11.75) {\textbf{x}};
+\node [font=\small] at (2.5,15.75) {\textbf{y}};
+\end{circuitikz}
