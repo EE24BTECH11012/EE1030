@@ -1,0 +1,15 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw (1.75,14.5) to[battery1,l=$20 V$] (1.75,11.25);
+\draw [line width=0.2pt](1.75,14.5) to[L,l={ \small L} ] (5,14.5);
+\draw [ line width=0.2pt](1.75,11.25) to[short] (7.75,11.25);
+\draw [ line width=0.2pt](5,14.5) to[short] (5,13.75);
+\draw [ line width=0.2pt](5,13.25) to[short] (5,11.25);
+\draw [ line width=0.2pt](5,13.75) to[short] (5.5,13.25);
+\draw [ line width=0.2pt](5,14.5) to[D] (7,14.5);
+\draw [line width=0.2pt](7,14.5) to[C,l={ $\small V_0$}] (7,11.25);
+\draw [ line width=0.2pt](7.75,11.25) to[european resistor] (7.75,14.5);
+\draw [ line width=0.2pt](6.75,14.5) to[short] (7.75,14.5);
+\node [font=\small] at (5.25,13) {'S'};
+\node [font=\small] at (2.25,14.75) {$I_l = 4A \rightarrow$};
+\end{circuitikz}

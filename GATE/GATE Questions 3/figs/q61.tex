@@ -1,0 +1,18 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\small]
+\draw [ line width=0.2pt](2.25,15) to[sinusoidal voltage source, sources/symbol/rotate=auto] (2.25,12.75);
+\draw [ line width=0.2pt](2.25,15) to[short] (4,15);
+\draw [ line width=0.2pt](2.25,12.75) to[short] (6,12.75);
+\draw [ line width=0.2pt](4,14) to[D] (4,16.75);
+\draw [ line width=0.2pt](4,11.75) to[D] (4,14.75);
+\draw [ line width=0.2pt](6,12) to[D] (6,14.25);
+\draw [ line width=0.2pt](6,14) to[D] (6,16.75);
+\draw [ line width=0.2pt](4,16.75) to[short] (6.75,16.75);
+\draw [ line width=0.2pt](4,12) to[short] (8.75,12);
+\draw [line width=0.2pt](6.5,16.75) to[L ] (8.75,16.75);
+\draw [ line width=0.2pt](8.75,16.75) to[R] (8.75,14.25);
+\draw (8.75,12) to[battery1,l=$150 V$] (8.75,14.5);
+\node [font=\small] at (7.75,15.5) {2 $\Omega$};
+\node [font=\small] at (2.75,14) {230 V, 50Hz};
+\node [font=\small] at (7.75,17.5) {L};
+\end{circuitikz}

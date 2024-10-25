@@ -1,0 +1,309 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{circuitikz}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 3}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+	\item A lossless power system has to serve a load of 250MW. There are two generators G1 and G2 in the system with cost curves $C_1$ and $C_2$ respectively defined as follows :
+		$$ C_1(P_{G1}) = P_{G1} + 0.055 \times P_{G1}^2 $$
+		$$ C_2(P_{G2}) = 3P_{G2} + 0.03 \times P_{G2}^2 $$
+where $P_{G1}$ and $P_{G2}$ are the MW injections from generator G1 and G2 respectively. Then the cost dispatch will be 
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $P_{G1} = 250 MW, P_{G2} = 0 MW$
+				\item $P_{G1} = 150 MW, P_{G2} = 100 MW$
+				\item $P_{G1} = 100 MW, P_{G2} = 150 MW$
+				\item $P_{G1} = 0 MW, P_{G2} = 250 MW$
+				\end{multicols}
+		\end{enumerate}
+	\item A lossless single machine infinite bus power system is shown below:
+		\begin{figure}[H]
+			\centering
+			\input{figs/q53.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+		The sychronous generator transfers 1.0 per unit of power to the infinite bus. The critical clearing time of circuit breaker is 0.28s. If another identical synchronous generator is connected in parallel to the existing fenarator and each generator is scheduled to supply 0.5 per unit of power, then the critical clearing time of the circuit breaker will 
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item reduce to 0.14 s
+				\item reduce but will be more than 0.14 s
+				\item remain constant at 0.28 s
+				\item increase beyond 0.28 s
+				\end{multicols}
+		\end{enumerate}
+	\item Single line diagram of a 4-bus single source distribution system is shown below. Branches $e_1$, $e_2$, $e_3$ and $e_4$ have equal impedances. The load current values indicated on the figure are in per unit.
+			\begin{figure}[H]
+			\centering
+			\input{figs/q54.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		Distribution company's policy requires radial system operation with minimum loss. This can be achieved by opening of the branch 
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $e_1$
+				\item $e_2$
+				\item $e_3$
+				\item $e_4$
+				\end{multicols}
+		\end{enumerate}
+	\item A single phase fully cotrolled bridge converter supplies a load drawing constant and ripple-free load current. If the triggering angle is 30 $\degree$, the input power factor will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 0.65
+				\item 0.78
+				\item 0.85
+				\item 0.866
+				\end{multicols}
+		\end{enumerate}
+	\item A single-phase half controlled converter shown in the figure is feeding power to highly inductive load. The converter is operating at a firing angle of 60 $\degree$.
+			\begin{figure}[H]
+			\centering
+			\input{figs/56.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		If the firing pulses are suddenly removed, the steady state voltage $\brak{v_0}$ waveform of the converter will become
+		\begin{enumerate}
+			\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/56a.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+			\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/56b.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+			\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/56c.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+			\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/56d.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		\end{enumerate}
+	\item A 200V, 20A, 1000rpm separately excited DC motor has an armatur resistance of 0.4 $\Omega$. The motor is fed from a single phase circulating current dual converter with an input AC line voltage of 220V (rms) . The approximate firing angles of the dual converter for the motoring operation at 50 $\%$ of the rated torque and 1000 rpm will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $43 \degree , 137 \degree$
+				\item $43 \degree , 47 \degree$
+				\item $39 \degree , 141 \degree$
+				\item $39 \degree , 51 \degree$
+				\end{multicols}
+		\end{enumerate}
+	\item A 220 V, 20A, 1000rpm separately excited DC motor has an armature resistance of 2.5 $\Omega$. The motor is controlled by a step-down chopper with a frequency of 1kHz. The input DC voltage to the chopper is 250V. The duty cycle of the chopper for the motor to operate at a speed of 600 rpm delivering the rated torque will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 0.518
+				\item 0.608
+				\item 0.852
+				\item 0.902
+				\end{multicols}
+		\end{enumerate}
+	\item A single phase voltage converter is feeding a purely inductive load as shown in the figure.
+			\begin{figure}[H]
+			\centering
+			\input{figs/q59.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		The inverter is operated at 50Hz in 180 $\degree$ square waver mode. Assume that the load current does not have any DC component. The peak value of the inductor curret $i_0$ will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 6.37 A
+				\item 10 A
+				\item 20 A
+				\item 40 A
+				\end{multicols}
+		\end{enumerate}
+	\item A 400V, 50Hz, 4 pole, 1400 rpm star connected squirrel cage induction motor has the following parameters referred to the stator:
+		$$ R_r = 1.0 \Omega ; X_s = X_r = 1.5 \Omega $$
+		Neglect stator resistance and core and rotational losses of the motor. The motor is controlled from a 3-phase voltage source inverter with constant V/f control. The stator line-to-line voltage (rms) and frequency to obtain the maximum torque at starting will be 
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item 20.6V, 2.7Hz
+				\item 133.3V, 16.7Hz
+				\item 266.6V, 33.3Hz
+				\item 323.3V, 40.3Hz
+				\end{multicols}
+		\end{enumerate}
+	\item A single phase fully controlled converter bridge is used for electrical braking of a separately excited DC motor. The DC motor load is represented by an equivalent circuit as shown in the figure.
+			\begin{figure}[H]
+			\centering
+			\input{figs/q61.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+	Assume that the load inductance is sufficient to ensure continuous and ripple free load current. The firing angle of the bridge for a load current of $I_0 = 10 A$ will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 44 $\degree$
+				\item 51 $\degree$
+				\item 129 $\degree$
+				\item 136 $\degree$
+				\end{multicols}
+		\end{enumerate}
+	\item A three phase fully controlled bridge converter is feeding a load drawing a constamt and ripple-free load current of 10A at a firing angle of 30 $\degree$. The approximate Total Harmonic Distortion ( \%THD ) and the rms value of fundamental component of the input current will be respectively
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item 31 \% and 6.8 A
+				\item 31 \% and 7.8 A
+				\item 66 \% and 6.8 A
+				\item 66 \% and 7.8 A
+				\end{multicols}
+		\end{enumerate}
+	\item In the circuit shown in the figure, the switch is operated at a duty-cycle of 0.5. A large capacitor is connected across hthe load. The inductor current is assumed to be continuous.
+			\begin{figure}[H]
+			\centering
+			\input{figs/q63.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		The average voltage across the load and the average current through the diode will respectively be
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item 10V, 2A
+				\item 10V, 8A
+				\item 40V, 2A
+				\item 40V, 8A
+				\end{multicols}
+		\end{enumerate}
+	\item The transfer function of a linear time variant system is given as 
+		$$ G(s) = \frac{1}{s^2 + 3s + 2} $$
+		The steady value of the outputof the system for a unit impulse applied at time instant $t=1$ will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 0
+				\item 0.5
+				\item 1
+				\item 2
+				\end{multicols}
+		\end{enumerate}
+	\item The transfer functions of two compensators are given below :
+		$$ C_1 = \frac{10\brak{s+1}}{\brak{2+10}} ; C_2 = \frac{s+10}{10\brak{s+1}} $$
+		Which of the following statements is correct ?
+		\begin{enumerate}
+			\item $C_1$ is a lead compensator and $C_2$ is a lag compensator
+			\item $C_2$ is a lead compensator and $C_1$ is a lag compensator
+			\item Both $C_1$ and $C_2$ are lead compensators
+			\item Both $C_1$ and $C_2$ are lag compensators
+		\end{enumerate}
+	\item The asymptotic Bode magnitude plot of a minimum phase transfer function is shown in the figure. This transfer function has
+			\begin{figure}[H]
+			\centering
+			\input{figs/q66.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+
+		\begin{enumerate}
+				\begin{multicols}{3}
+				\item 3 poles and 1 zero
+				\item 2 poles and 1 zero
+				\item 2 poles and 2 zeroes
+				\item 1 pole and 2 zeroes
+				\end{multicols}
+		\end{enumerate}
+	\item The range of K for which the system $\frac{K}{s(s+3)(s+10)}$ is stable will be given by
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $0 \leq K \leq 30 $
+				\item $0 \leq  K \leq 39 $
+				\item $0 \leq K \leq 390$
+				\item $K > 390$
+				\end{multicols}
+		\end{enumerate}
+	\item The transfer function of a system is given by
+		$$ \frac{100}{s^2 + 20s + 100} $$
+		This system is
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item an overdamped system
+				\item an underdamped system
+				\item a critically damped system
+				\item an unstable system
+				\end{multicols}
+		\end{enumerate}
+
+\end{enumerate}
+\end{document}
