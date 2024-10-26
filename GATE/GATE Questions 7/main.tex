@@ -1,0 +1,214 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{circuitikz}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 7}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+	\item The maximum value of the function $f(x,y,z) = xyz $ subject to the constraint $ xy + yz + xz - a = 0, a>0 $ is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $a^{\frac{3}{2}}$
+				\item $\frac{a}{3}^{\frac{3}{2}}$
+				\item $\frac{3}{a}^{\frac{3}{2}}$
+				\item $\frac{3a}{2}^{\frac{3}{2}}$
+				\end{multicols}
+		\end{enumerate}
+	\item The function $\int_{0}^{1} \brak{y^2 + 4y + 8ye^x} ds$, $y(0) = \frac{-4}{3}$, $y(1)=\frac{-4e}{3}$ possesses :
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item strong minima on $y = \frac{-1}{3}e^x$
+				\item strong minima on $y = \frac{-4}{3}e^x$
+				\item strong maxima on $y = \frac{-4}{3}e^x$
+				\item weak maxima on $y = \frac{-1}{3}e^x $
+				\end{multicols}
+		\end{enumerate}
+	\item A particle of mass m is constrained to move on a circle with radius a which itself is rotating about its vertical diameter with a constant agular velocity $\omega$. Assume that the initial angular veloity is zero and g is the acceleration due to gravity. If $\theta$ be the inclination of the radius vector of the particle with the axis of rotation and $\theta$ denotes the derivative of $\theta$ with respect to t, then the Lagrangian of this system is
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\frac{1}{2} ma^2(\theta^2 + \omega \sin{\theta}^2) + mga \cos{\theta}$
+				\item $\frac{1}{2} ma^2(\theta^2 + 2 \omega \sin{\theta}^2) - mga \cos{\theta}$
+\item $\frac{1}{2} ma^2(\theta^2 + \omega \cos{\theta}) + mga \cos{\theta}$
+\item $\frac{1}{2} ma^2(\theta^2 + \omega \sin{2 \theta}) + mga \sin{\theta}$
+				\end{multicols}
+		\end{enumerate}
+	\item For the matrix
+		$$ M = \myvec{ 2 && 3+2i && -4 \\ 3-2i && 5 && 6i \\ -4 && -6i && 3}$$
+		which of the following statements are correct ?\\
+		\textbf{P:} M is skew-symmetric and iM is Hermitian \\
+		\textbf{Q:} M is Hermitian and iM is skew symmetric \\
+		\textbf{R:} eigen values of M are real \\
+		\textbf{S:} eigen values of iM are real \\
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item P and R only
+				\item Q and R only
+				\item P and S only
+				\item Q and S only
+				\end{multicols}
+		\end{enumerate}
+	\item Let $T: P_3 \to P_3$ be the map given by $T(P(X)) = \int_{1}^{x} p^{\prime}(t) dt $. If the matrix of T relative to the standard bases $B_1 = B_2 = \cbrak{1,x,x^2,x^3}$ is M and $M^{\prime}$ denotes the transpose of the matrix M, then $M+M^{\prime}$ is
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\myvec{0 && -1 && -1 && -1 \\ -1 && 2 && 0 && 0 \\ 0 && 0 && 2 && 0 \\ 0 && 0 && 0 && 2}$
+				 \item $\myvec{-1 && 0 && 0 && 2 \\ 0 && -1 && 1 && 0 \\ 0 && 1 && -1 && 0 \\ 2 && 0 && 2 && -1}$
+				\item $\myvec{2 && 0 && 0 && -1 \\ 0 && 2 && 1 && 0 \\ 0 && 1 && 2 && -1 \\ -1 && 0 && -1 && 0}$
+				\item $\myvec{0 && 2 && 2 && 2 \\ 2 && -1 && 0 && 0 \\ 2 && 0 && -1 && 0 \\ 2 && 0 && 0 && -1}$
+				\end{multicols}
+		\end{enumerate}
+	\item Using Euler's method taking step size = 0.1, the approximate value of Yy obtained using corresponding to x = 0.2 for the initial value problem $ \frac{dy}{dx} = x^2 + y^2 $ and $y(0) = 1$ is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 1.322
+				\item 1.122
+				\item 1.222
+				\item 1.110
+				\end{multicols}
+		\end{enumerate}
+	\item The following table gives the unit transportation costs, the supply at each origin and the demand of each destination for a transportation problem.
+		\input{tables/table2.tex}
+		Let $x_0$ denote the number of units to be transported from origin i to destination j. If the u-v method is applied to improve the basic feasible solution given by $X_{12} = 60, x_{22} = 10, x_{23} = 50, x_{24} = 20, x_{31} = 40$ and $x_{34} = 60$, the the variables entering the leaving the basis respectively are
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $x_{21}$ and $x_{24}$
+				\item $x_{13}$ and $x_{23}$
+				\item $x_{14}$ and $x_{24}$
+				\item $x_{33}$ and $x_{24}$
+				\end{multicols}
+		\end{enumerate}
+	\item Consider the system of equations 
+		$$ \myvec{5 && -1 && 1 \\ 2 && 4 && 0 \\ 1 && 1 && 5} \myvec{x \\ y \\ z} = \myvec{10 \\ 12 \\ -1} $$ 
+		Using Jacobi's method with the initial guess $\myvec{x^(0) && y^(0) && z^(0)} = \myvec{2.0 && 3.0 && 0.0}$, the approximate solution $\myvec{x^(2) && y^(2) && z^(2)}$ after two iterations, is
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\myvec{2.64 && -1.70 && -1.12}$
+				\item $\myvec{2.64 && -1.70 && 1.12}$
+				\item $\myvec{2.64 && 1.70 && -1.12}$
+				\item $\myvec{2.64 && 1.70 && 1.12}$
+				\end{multicols}
+		\end{enumerate}
+	The optimal table for the primal linear programming problem : \\
+	Maximize $z = 6x_1 + 12x_2 + 12x_3 - 6x_4$ \\
+	Subject to $$x_1 + x_2 + x_3 = 4 $$
+	$$ x_1 + 4x_2 + x_4 = 8 $$ $x_1, x_2, x_3, x_4 \geq 0$
+	\input{tables/table1.tex}
+\item If $y_1$ and $y_2$ ate the dual variables correspondinng to the first and second primal constraints, then their values values in the optimal solutions of the dual problem are respectively
+	\begin{enumerate}
+			\begin{multicols}{2}
+			\item 0 and 6
+			\item 12 and 0
+			\item 6 and 3
+			\item 4 and 4
+			\end{multicols}
+	\end{enumerate}
+\item If the right hand side of the second constraint is changed from 8 to 20, then in the optimal solution of the primal problem, the basic variables will be
+	\begin{enumerate}
+			\begin{multicols}{2}
+			\item $x_1$ and $x_2$
+			\item $x_1$ and $x_3$
+			\item $x_2$ and $x_3$
+			\item $x_2$ and $x_4$
+			\end{multicols}
+	\end{enumerate}
+Consider the Fredholm integral equation $$ u(x) = x + \lambda \int_{0}^{1} x e^t u(t) dt $$ 
+\item The resolvent kernel R(x,t, $\lambda$) for this integral equation is
+	\begin{enumerate}
+			\begin{multicols}{4}
+			\item $\frac{xe^t}{1-\lambda}4$
+			\item $\frac{\lambda xe^t}{1 + \lambda}$
+			\item $\frac{xe^t}{1 + \lambda^2}$
+			\item $\frac{xe^t}{1 - \lambda^2}$
+			\end{multicols}
+	\end{enumerate}
+\item The solution of this integral equation is
+	\begin{enumerate}
+			\begin{multicols}{4}
+			\item $\frac{x+1}{1 - \lambda}$
+			\item $\frac{x^2}{1 - \lambda^2}$
+			\item $\frac{x}{1 + \lambda^2}$
+			\item $\frac{x}{1 - \lambda}$
+			\end{multicols}
+	\end{enumerate}
+The joint probability density function of two random variables X and Y is given as 
+$$ f(x.y) = \begin{cases}
+	\frac{6}{5} \brak{x + y^2}, & 0 \leq x \leq 1, 0 \leq y \leq 1 \\
+	0, &elsewhere
+\end{cases} $$
+\item E(X) and E(Y) are, respectively
+	\begin{enumerate}
+			\begin{multicols}{4}
+			\item $\frac{2}{5}$ and $\frac{3}{5}$
+			\item $\frac{3}{5}$ and $\frac{3}{5}$
+			\item $\frac{3}{5}$ and $\frac{6}{5}$
+			\item $\frac{4}{5}$ and $\frac{6}{5}$
+			\end{multicols}
+	\end{enumerate}
+\item Cov(X,Y) is
+	\begin{enumerate}
+			\begin{multicols}{4}
+			\item -0.01
+			\item 0
+			\item 0.01
+			\item 0.02
+			\end{multicols}
+	\end{enumerate}
+
+\end{enumerate}
+\end{document}
