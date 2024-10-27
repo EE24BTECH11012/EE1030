@@ -1,0 +1,26 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=2pt ] (3.5,13.25) rectangle (4.75,14.5);
+\begin{scope}[rotate around={90:(1.75,13.25)}]
+\foreach \x in {0,...,21}{
+  \draw [ line width=0.2pt] (1.75+\x*0.1,13.25) -- ++(0.05,0.5) -- ++ (0.05, -0.5);
+}
+\end{scope}
+\draw [line width=0.2pt](1.25,15.5) to (1.5,15.5) node[ground]{};
+\draw [ line width=0.2pt](1,15.5) to[short] (2,15.5);
+\draw [ line width=0.2pt](1,15.5) to[short] (1.5,16);
+\draw [ line width=0.2pt](1.25,15.5) to[short] (1.75,16);
+\draw [ line width=0.2pt](1.5,15.5) to[short] (2,16);
+\draw [ line width=0.2pt](1.75,15.5) to[short] (2.25,16);
+\draw [ line width=0.2pt](2,15.5) to[short] (2.5,16);
+\draw [ line width=0.2pt](7.25,13.75) to[short] (7.25,12.75);
+\draw [ line width=0.2pt](7.25,13.25) to[short] (7.75,12.75);
+\draw [ line width=0.2pt](7.25,13.75) to[short] (7.75,13.25);
+\node [font=\normalsize] at (1,14.25) {k};
+\node [font=\normalsize] at (4.25,13.75) {m};
+\node [font=\normalsize] at (2.5,12.75) {L};
+\node [font=\normalsize] at (6.75,12.75) {L};
+\draw [line width=0.2pt, <->, >=Stealth] (1.5,12.5) -- (4,12.5);
+\draw [line width=0.2pt, <->, >=Stealth] (4.25,12.5) -- (7.25,12.5);
+\draw [line width=0.2pt, short] (1.5,13.25) -- (7.25,13.25);
+\end{circuitikz}

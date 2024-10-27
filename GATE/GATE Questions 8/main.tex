@@ -1,0 +1,214 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}   
+\usepackage{multicol}
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{circuitikz}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\nCr}[2]{\,^{#1}C_{#2}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 8}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+	\item Details pertaining to an orthogonal metal cutting process are given below :\\
+		Chip thickness ratio 	0.4 \\
+		Undeformed thickness 	0.6 mm \\
+		Rake angle 	+10 $\degree$ \\
+		Cutting speed 	2.5 m/s \\
+		Mean thickness of primary shear zone 	25 $\mu$ \\
+	The shear strai rate in $s^{-1}$ during the process is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $0.1781 \times 10^5 $
+				\item $0.7754 \times 10^5 $
+				\item $1.0104 \times 10^5 $
+				\item $4.397 \times 10^5 $
+				\end{multicols}
+		\end{enumerate}
+	\item In a single pass drilling operation, a through hole of 15 mm diameter is to be drilled in a steel plate of 50 mm thickness. Drill spindle speed is 500 rpm, feed is 0.2 mm/rev and drill point angle is $112 \degree$ Assuming 2 mm clearance at approach and exit, the total drill time \brak{in seconds} is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 35.1
+				\item 32.4
+				\item 31.2
+				\item 30.1
+				\end{multicols}
+		\end{enumerate}
+	\item Consider two infinitely long thin concentric tubes of circular cross-section as shown in the figure. Id $D_1$ and $D_2$ are the diameters of the inner and outer tubes respectively, then the view factor $F_{22}$ is given by
+		\begin{figure}[H]
+			\centering
+			\input{figs/q29.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $\frac{D_2}{D_1} - 1$
+				\item $0$
+				\item $\frac{D_2}{D_1}$
+				\item $1 - \frac{D_1}{D_2}$
+				\end{multicols}
+		\end{enumerate}
+	\item An incompressible fluid flows over a flat plate with zero pressure  gradient. The boundary layer thickness is 1 mm at a location where the Reynolds number is 1000. If the velocity of the fluid alone is increased by a factor of 4, then the boundary layer thickness at the same location in mm will be
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 4
+				\item 2
+				\item 0.5
+				\item 0.25
+				\end{multicols}
+		\end{enumerate}
+	\item A room contains 35 kg of dry air and 0.5 kg of water vapour. The total pressure and temperature of air in the room are 100 kPa and 25 $\degree$ C respectively. Given that the saturation pressure for water at 25 $\degree C$ is 3.17 kPa, the relative humidity of the air in the room is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 67 \%
+				\item 55 \%
+				\item 83 \%
+				\item 71 \%
+				\end{multicols}
+		\end{enumerate}
+	\item A fillet welded joint is subjected to transverse loading F as shown in the figure. Both legs of the fillets are of 10 mm size and the weld length is 30 mm. If the allowable shear stress of the weld is 94 MPa, considering the minimum throat area of the weld, the maximum allowable transverse load in kN is
+		\begin{figure}[H]
+			\centering
+			\input{figs/q32.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 14.44
+				\item 17.92
+				\item 19.93
+				\item 22.16
+				\end{multicols}
+		\end{enumerate}
+	\item A concentrated mass $m$ is attached at the centre of a rod of length 2L as shown in the figure. The rod is kept in a horizontal equilibrium position by a spring of stiffness $k$. For very small amplitudes of vibration, neglecting the weights of the rod and spring, the undamped natural frequency of the system is
+		\begin{figure}[H]
+			\centering
+			\input{figs/q33.tex}
+			\caption{}
+			\label{25}
+		\end{figure}
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $\sqrt{\frac{k}{m}}$
+				\item $\sqrt{\frac{2k}{m}}$
+				\item $\sqrt{\frac{k}{2m}}$
+				\item $\sqrt{\frac{4k}{m}}$
+				\end{multicols}
+		\end{enumerate}
+	\item The state of stress at a point under plane stress condition is 
+		$$ \sigma_{xx} = 40 MPa ; \sigma_{yy} = 100 MPa ; \tau_{xy} = 40 MPa $$
+		The radius of the Mohr's circle representing the given state of stress in MPa is 
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 40
+				\item 50
+				\item 60
+				\item 100
+				\end{multicols}
+		\end{enumerate}
+	\item The inverse Laplace transform of the function $F(x) = \frac{1}{s(s+1)}$ is given by
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $f(t) = \sin{t}$
+				\item $f(t) = e^{-t} \sin{t} $
+				\item $f(t) = e^{-t}$
+				\item $f(t) = 1 - e^{-t}$
+				\end{multicols}
+		\end{enumerate}
+	\item For the matrix $A = \myvec{5 && 3 \\ 1 && 3}$, ONE of the normalized eigen vectors is given as
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\myvec{\frac{1}{2} \\ \frac{\sqrt{3}}{2}}$
+				\item $\myvec{\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}}}$
+				\item $\myvec{\frac{3}{\sqrt{10}} \\ \frac{\sqrt{-1}}{\sqrt{10}}}$
+				\item $\myvec{\frac{1}{\sqrt{5}} \\ \frac{\sqrt{2}}{\sqrt{5}}}$
+				\end{multicols}
+		\end{enumerate}
+	\item Calculate the punch size im mm for a circular blanking operation for which details are given below \\
+		Size of the blank 	 25 mm \\
+		Thickness of the sheet		2 mm \\
+		Radial clearance between punch and die		0.06 mm \\
+		Die allowance		0.05 mm
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 24.83
+				\item 24.89
+				\item 25.01
+				\item 25.17
+				\end{multicols}
+		\end{enumerate}
+	\item In a single pass rolling process using 410 mm diameter steel rollers, a strip of width 140 mm and thickness 8 mm undergoes 10 \% reduction of thicnkness. The angle of bite in radians is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 0.006
+				\item 0.031
+				\item 0.062
+				\item 0.600
+				\end{multicols}
+		\end{enumerate}
+	\item In a DC are welding operation, the voltage-arc length characteristic was obtained as $V_{arc} = 20 + 5l$ where the arc length $l$ was varied between 5 mm and 7 mm. Here $V_{arc}$ denotes the arc voltage in Volts. The arc current was varied feom 400 A to 500 A. Assuming linear power source characteristic, the open circuit voltage and the short circuit current for the welding opeartion are
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item 45 V, 450 A
+				\item 75 V, 750 A
+				\item 95 V, 950 A
+				\item 150 V, 1500 A
+				\end{multicols}
+		\end{enumerate}
+
+\end{enumerate}
+\end{document}
