@@ -1,0 +1,175 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{} 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 11}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+	\item Which of the following is CORRECT with respect to grammar and usage ? \\
+		Mount Everest is
+		\begin{enumerate}
+			\item the highest peak in the world
+			\item highest peak in the world
+			\item one of highest peak in the world
+			\item one of the highest peak in the world
+		\end{enumerate}
+	\item The policeman asked the victim of a theft, "What did you \underline{		} ?"
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item loose
+				\item lose
+				\item loss
+				\item louse
+				\end{multicols}
+		\end{enumerate}
+	\item Despite the new medicine's \underline{} in treating diabetes, it is not \underline{} widely.
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item effectiveness -- prescribed
+				\item availability -- used
+				\item prescription -- available
+				\item acceptance -- proscribed
+				\end{multicols}
+		\end{enumerate}
+	\item In a huge pile of apples and oranges, both ripe and unripe mixed togetherm 15 \% are unripe fruits. Of the unripe fruits, 45 \% are apples. Of thenripe ones, 66 \% are oranges. If the pile contains a total of 5692000 fruits, how many of them are apples ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 2029198
+				\item 2467482
+				\item 2789080
+				\item 3577422
+				\end{multicols}
+		\end{enumerate}
+	\item Michael lives 10 km away from where I live. Ahmed lives 5 km away and Susan lives 7 km away from where I live. Arun is farther away than Ahmed but closer than Susan from where I live. From the information provided here, what is one possible distance ( in km ) at which I live from Arun's place ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 3.00
+				\item 4.99
+				\item 6.02
+				\item 7.01
+				\end{multicols}
+		\end{enumerate}
+	\item A person moving through a tuberculosis prone zone has a 50 \% probability of becoming infected. However, only 30 \% of infected people develop the disease. What percentage of people moving through a tuberculosis prone zone remains infected but does not show symptoms of disease ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 15
+				\item 33
+				\item 35
+				\item 37
+				\end{multicols}
+		\end{enumerate}
+	\item In a world filled with uncertainity, he was glad to have many good friends. He had always assisted them in times of need and was confident that they would reciprocate. However, the events of the last week proved them wrong. \\
+		Which of the following inference(s) is/are logically valid and can be inferred from the above passage ? \\
+		(i) His friends were always aksing him to help them. \\
+		(ii) He felt that when in need of help, his friends would let him down. \\
+		(iii) He was sure that his friends would help him when in need. \\
+		(iv) His friends did not help him last week.
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item (i) and (ii)
+				\item (iii) and (iv)
+				\item (iii) only
+				\item (iv) only
+				\end{multicols}
+		\end{enumerate}
+	\item Leela is older than her cousin sister Pavithra. Pavithra's brother Shiva is older than Leela. When Pavithya and Shiva are visiting Leela, all three like to play chess. Pavitra wins more often than Leela does. \\
+		Which one of the following statements must be TRUE based on the above ?
+		\begin{enumerate}
+			\item When Shiva plays hess with Leela and Pavithra, he often loses.
+			\item Leela is the oldest of the three.
+			\item Shiva is a better chess player than Pavtihra.
+			\item Pavithra is the youngest of the three.
+		\end{enumerate}
+	\item If $q^a = \frac{1}{r} $ and $r^{-b} = \frac{1}{s}$ and $s^{-c}=\frac{1}{q}$, the value of $abc$ is 
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $\brak{rqs}^{-1}$
+				\item 0
+				\item 1
+				\item $r+q+s$
+				\end{multicols}
+		\end{enumerate}
+	\item P, Q, R and S are working on a project. Q can finish the task in 25 days, working alone for 12 hours a day. R can finish the task in 50 days, working alone for 12 hours a day. Q worked 12 hours a day but took sick leave in the beginning for two days. R worked 18 hours a day on all days. What is the ratio of work done by Q and R after 7 days from the start of the project ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 10:11
+				\item 11:10
+				\item 20:21
+				\item 21:20
+				\end{multicols}
+		\end{enumerate}
+	\item The solution to the system of equations 
+		$$ \myvec{2 && 5 \\ -4 && 3} \myvec{x \\ y} = \myvec{2 \\ -30} $$ is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 6,2
+				\item -6,2
+				\item -6,-2
+				\item 6,-2
+				\end{multicols}
+		\end{enumerate}
+	\item If f(t) is a function defined for all $t \geq 0$, its Laplace transform $F(x)$ is defined as
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $\int_{0}^{\infty} e^{st} f(t) dt$
+				\item $\int_{0}^{\infty} e^{-st} f(t) dt$
+				\item $\int_{0}^{\infty} e^{ist} f(t) dt$
+				\item $\int_{0}^{\infty} e^{-ist} f(t) dt$
+				\end{multicols}
+		\end{enumerate}
+	\item $f(z) = u(x,y) + i v(x,y)$ is an analytic function of complex variable $z = x + iy $ where $i = \sqrt{-1}$. If $u(x,y) = 2xy$, then $v(x,y)$ may be expressed as
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $-x^2 + y^2 + c$
+				\item $x^2 - y^2 + c$
+				\item $x^2 + y^2 + c$
+				\item $-x^2 - y^2 + c$
+				\end{multicols}
+		\end{enumerate}
+
+\end{enumerate}
+\end{document}
