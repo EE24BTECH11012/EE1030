@@ -1,0 +1,118 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{} 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 17}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+	\item P and Q are two Hermititan matrices and there exists a matrix R, which diagonalizes both of them, such that $RPR^{-1} = S_1$ and $RQR^{-1} = S_2$, where $S_1$ and $S_2$ are diagonal matrices. The correct statement(s) is(are) :
+		\begin{enumerate}
+			\item All the elements of both matrices $S_1$ and $S_2$ are real
+			\item The matrix PQ can have complex eigenvalues.
+			\item The matrix QP can have complex eigenvalues.
+			\item The matrices P and Q commute.
+		\end{enumerate}
+	\item A uniform block of mass $M$ slides on a smooth horizontal bar. Another mass $m$ is connected to it by an inextensible string of length $l$ of negligible mass, and is constrained to oscillate in the X-Y plane only. Neglect the sizes of the masses. The number of degrees of freedom of the system is two and the generalized coordinates are chosen as $x$ and $\theta$ as shown in the figure. \\
+		\begin{figure}[H]
+			\centering
+			\input{figs/fig2.tex}
+			\label{25}
+		\end{figure}
+		If $p_x$ and $p_{\theta}$ are the generalised momenta corresponding to $x$ and $\theta$, respectively, then the correct option(s) is(are)
+		\begin{enumerate}
+	\item $p_x = \brak{m+M} \overline{x} + mI\cos{\theta} \overline{\theta}$
+	\item $p_{\theta} = mI^2 \overline{\theta} - mI \cos{\theta} \overline{x}$
+	\item $p_x$ is conserved
+	\item $p_{\theta}$ is conserved
+		\end{enumerate}
+	\item The Gell-Mann-Okuba mass formula defines the mass of baryons as 
+		$$ M = M_0 + aY + b \sbrak{I(I+1) - \frac{1}{4} Y^2}, \text{where} M_0, a \text{and} b \text{are constants}$$
+		If the mass of $\sigma$ hyperons is same as that of $\Lambda$ hyperons, then the correct option(s) is(are)
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item $M \propto I(I+1)$
+				\item $M \propto Y$
+				\item $M$ does not depend on $I$
+				\item $M$ does not depend on $Y$
+				\end{multicols}
+		\end{enumerate}
+	\item The time derivative of a differentiable function $g(q_{i},t)$ is added to a Lagrangian $L(q_i, \overline{q_i},t)$ such that
+		$$ L^{\prime} = L(q_i, \overline{q_i}, t) + \frac{d \brak{g(q_i,t)}}{dt} $$
+		where $q_i, \overline{q_i}, t$ are the generalised coordinates, generalizes velocities and time respectively. Let $p_i$ be the generalized momentum and H the Hamiltonian associated with $L(q_i, \overline{q_i}, t)$. If $p_{i}^{\prime} \text{and} H^{\prime}$ are those associated with $L^{\prime}$, then the correct option(s) is(are)
+		\begin{enumerate}
+			\item Both $L$ and $L^{\prime}$ sarisfy Euler-Lagrange's equations of motion.
+			\item $p_{i}^{\prime} = p_i + \frac{\partial}{\partial q_i} g(q_i,t) $
+			\item If $p_i$ is conserved, then $p_{i}^{\prime}$ is necassarily conserved.
+			\item $H^{\prime} = H + \frac{d}{dt} g(q_i, t) $
+		\end{enumerate}
+	\item A linear charged particle accelerator is driven by an alternating voltage source operating at 10 MHz. Assume that it is used to accelerate electrons. After a few drift-tubes, the electrons attain a velocity $2.9 \times 10^8 ms^{-1}$. The minimum length of each drift-tube, in m, to accelerate the electrons further is \underline{   }
+	\item The Coulomb energy component in the binding energy of a nucleus is 18.432 MeV. If the radius of the uniform and spherical charge distribution in the nucleus is 3 fm, the corresponding atomic number is \underline{  }
+	\item For a two-nucleon system, in spin singlet state, the spin is represented through the Pauli matrices $\sigma_1, \sigma_2$ for particles 1 and 2, respectively. The value of $\brak{\sigma_1 \cdot \sigma_2}$ is
+	\item A contour is defined as 
+		$$ I_n = \int \frac{dz}{(z-n)^2 + \pi^2} $$
+		where $n$ is a positive integer and C is the closed contour, as shown in the figure, consisting of the line from -100 to 100 and the semicircle traversed in the counter-clockwise sense. The value of $\sum_{n=1}^{5} I_n $ is
+		\begin{figure}[H]
+			\centering
+			\input{figs/fig1.tex}
+			\label{25}
+		\end{figure}
+	\item The normalised radial wave function of the second excited state of hydrogen atom is 
+		$$ R(r) = \frac{1}{\sqrt{24}} a^{\frac{3}{2}} \frac{r}{a} e^{\frac{-r}{2a}} $$
+		where $a$ is the Bohr radius and $r$ is the distance from the centre of the atom. The distance at which the electron is most likely to be found is $y \times a$, the value of $y$ is
+	\item Consider an atomic gas with number density $n = 10^{20} m^{-3} $, in the ground state at 300 K. The valence electronic configuration of atoms is $f^7$. The paramagetic susceptibility of the gas $\chi = m \times 10^{-11}$. The value of $m$ is
+	\item Consider a cross-section of an electromagnet having an air-gap of 5 cm as shown. It consists of a magnetic material with $\mu = 20000 \mu_0$ and is driven by a coil having $NI = 10^4$ where $N$ is the number of turns and $I$ is the current in Ampere.
+		\begin{figure}[H]
+			\centering
+			\input{figs/fig3.tex}
+			\label{25}
+		\end{figure}
+		Ignoring the fringe fields, the magnitude of the magnetic field $\overline{B}$ in the air-gap between the magnetic poles is
+	\item The spin $\overline{S}$ and orbital angular momentum $\overline{L}$ of an atom process about $\overline{J}$, the total angular momentum $\overline{J}$ precesses about an axis fixed by a magnetic field $\overline{B_1} = 2B_0 \vec{z}$, where $B_0$ is a constant. Now the magnetic field is changed to $\overline{B_2} = B_0 ( \vec{x} + \sqrt{2} \vec{y} + \vec{z})$. Given the orbital angular momentum quantum number $l=2$ and spin quantum number $s = \frac{1}{2}$, $\theta$ is thr angle between $\overline{B_1}$ and $\overline{J}$ for the largest possible values of total angular momentum. The value of $\theta$ is
+	\item The spin-orbit effect splits the $^{2} P \to ^{2} S$ transition of wavelength $6521 \AA$ in Lithium into two lines with separation of $\delta \lambda = 0.14 \AA$. The corresponding positive value of energy difference between the above two lines, in eV, is $m \times 10^5$. The value of $m$ is
+\end{enumerate}
+\end{document}
+
