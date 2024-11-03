@@ -1,0 +1,87 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{} 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 20}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+	\item A reinforced concrete beam with rectangular cross section ( width = 300 mm , effective depth = 580 mm ) is made of M30 grade concrete. It has 1 \% longitudinal tension reinforcement of Fe 415 grade steel. The design shear strength for this beam is $0.66 N/mm^2$. The beam has to resist a factored shear force of 440 kN. The spacing of two-legged, 10 mm diameter vertical stirrups of Fe 415 grade steel is \rule{1cm}{0.1pt} mm \brak{\text{round off to the nearest integer}}
+	\item A square concrete pile of 10 m length is driven into a deep layer of uniform homogenous clay. Average unconfined compressive strength of the clay, determined through laboratory tests on undisturbed samples extracted from the clay layer, is 100 kPa. If the ultimate compressive load capacity of the driven pile is 632 kN, the required width of the pile is \rule{1cm}{0.1pt} mm. \brak{\text{in integer}}
+	\item A raft foundation of \textbf{$30 m \times 25 m$} is proposed to be costructed at a depth of $\textbf{8 m}$ in a sand layer. A $\textbf{25 m}$ thick saturated clay layer exists $\textbf{2 m}$ below the base of the raft foundation. Below the clay layer, a dense sand layer exists at the site. A $\textbf{25 mm}$ thick undisturbed sample was collected from the mid-depth of the clay layer and tested in a laboratory oedometer under double drainage condition. It was found that the soil sample had undergone $\textbf{ 50 \%}$ consolidation settlement in $\textbf{10 minutes}$. \\
+		The time ( in $\textbf{days}$ ) required for $\textbf{25 \%}$ consolidation settlement of the raft foundation will be \rule{1cm}{0.1pt}. \brak{\text{round off to the nearest integer}}
+	\item A two-hour duration storm event with uniform excess rainfall of 3 m occured on a watershed. The ordinates of streamflow hydrograph resulting from this event are given in the table. \\
+		\input{tables/56.tex}
+		Considering a constant baseflow of $ 10 m^3/s$, the peak flow ordinate $\brak{m^3/s}$ of one-hour unit hydrograph for the water-shed is \rule{1cm}{0.1pt}. $\brak{\text{in integer}}$
+	\item Two reservoirs are connected by two parallel pipes of equal length and of diameters 20 cm and 10 cm, as shown in the  figure \brak{not drawn to scale}. When the difference in the water levels of the reservoirs is 5 m, the ratio of discharge in the larger diameter pipe to the discharge in the smaller diameter pipe is \rule{1cm}{0.1pt} . \brak{\text{round off to the nearest integer}} \\
+		\brak{\text{Consider only loss due to friction and neglect all other losses. Assume the friction factor to be the same for both the pipes.}}
+		\begin{figure}[H]
+			\centering
+			\input{figs/57.tex}
+			\label{tab: Q_57}
+		\end{figure}
+	\item Depth of water flowing in a $\textbf{3 m}$ wide rectangular channel is $\textbf{2 m}$. The channel carries a discharge of \textbf{$12 m^3/s$}. Take \textbf{$g = 9.8 m/s^2$}. \\
+		The bed-width ( in $\textbf{m}$ ) at construction, which just causes the critical flow, is \rule{1cm}{0.1pt} without changing the upstream water level. \brak{\text{round off to two decimal places}}
+	\item A wastewater sample contains two nitrogen samples, namely ammonia and nitrate. Consider the atomic weight of N, H and O as 14 g/mol, 1 g/mol and 16 g/mol respectively. In this wastewater, the concentration of ammonia is 34 mg $NH_3$/litre and that of nitrate is 6.2 mg $NO_3^{-1}$/litre. The total nitrogen concentration in this wastewater is \rule{1cm}{0.1pt} milligram nitrogen per litre. \brak{\text{round off to one decimal place}}
+	\item A $\textbf{2 \%}$ sewage sample ( in distilled water ) was incubated for $\textbf{3 days}$ at $\textbf{27 \degree C}$ temperature. After incubation, a dissolved oxygen depletion of $\textbf{ 10 mg/L}$ was recorded. The Biochemical Oxygen Demand ( BOD ) rate constant at $\textbf{ 27 \degree C}$ was found to be \textbf{ $0.23 day^{-1}$} \brak{\text{at base} e}. \\
+		The ultimate BOD ( in $\textbf{mg/L}$ ) of the sewage will be \rule{1cm}{0.1pt}. \brak{\text{round off to the nearest integer}}
+	\item A water treatment plant has a sedimentation basin of depth 3 m, width 5 m, and length 40 m. The water inflow rate is $ 500 m^3/h $. The removal fraction of particles having a settling velocity of 1.0 m/h is \rule{1cm}{0.1pt} .\brak{\text{round off to one decimal place}} . \\
+		\brak{\text{Consider the particle density at $2650 kg/m^3$ and liquid density as $991 kg/m^3$}}
+	\item A two-phase signalized intersection is designed with a cycle time of 100 s. The amber and red times for each phase are 4 s and 50 s, respectively. If the total lost time per phase due to start-up and clearance is 2 s, the effective green time of each phase is \rule{1cm}{0.1pt} s \brak{\text{in integer}}
+	\item At a traffic intersection, cars and buses arrive randomly according to independent Poisson processes at an average rate of 4 vehicles per hour and 2 vehicles per hour respectively. The probability of observing at least 2 vehicles in 30 minutes is \rule{1cm}{0.1pt} . \brak{\text{round off to two decimal places}}
+	\item The vehicle count obtained in every $\textbf{10 minute}$ interval of a traffic volume survey done in peak one hour is given below. \\
+		\input{tables/64.tex}
+		The Peak Hour Factor ( PHF ) for 10 minute sub-interval is \rule{1cm}{0.1pt} . \brak{\text{round off to one decimal place}}
+	\item For the dual-wheel carrying assembly shown in the figure, P is the load on each wheel, $a$ is the radius of the contact area of the wheel, $s$ is the spacing between the wheels, and $d$ is the clear distance between the wheels. Assuming that the ground is elastic, homogenous and isotropic half-space, the ratio of Equivalent Single Wheel Load ( ESWL ) at depth $z = \frac{d}{2} $ to the ESWL at depth $z = 2s$ is \rule{1cm}{0.1pt}. \brak{\text{round off to one decimal place}} \\
+		\brak{\text{Consider the influence angle to be $45 \degree$ for the linear dispersion of stress with depth}}
+		\begin{figure}[H]
+			\centering
+			\input{figs/65.tex}
+			\label{tab: Q_65}
+		\end{figure}
+\end{enumerate}
+\end{document}
+
