@@ -1,0 +1,243 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+\usepackage{xparse}
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{} 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE Questions 21}
+\author{EE24BTECH11012 - Bhavanisankar G S}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+\begin{enumerate}
+	\item You should \rule{1cm}{0.1pt} when to say \rule{1cm}{0.1pt}.
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item no, no
+				\item no, know
+				\item know, know
+				\item know, no
+				\end{multicols}
+		\end{enumerate}
+	\item Two straight lines pass though the origin $\brak{x_0, y_0} = \brak{0,0}$. One of them passes through the point $\brak{x_1, y_1} = \brak{1,3}$ and the other passes through the point $\brak{x_2, y_2} = \brak{1,2}$. \\
+		What is the area enclosed between the straight lines in the interval \sbrak{0,1} on the $x$-axis ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 0.5
+				\item 1.0
+				\item 1.5
+				\item 2.0
+				\end{multicols}
+		\end{enumerate}
+	\item If 
+				$$ p : q = 1 : 2 $$
+				$$ q : r = 4 : 3 $$
+				$$ r : s = 4 : 5 $$
+				and $u$ is 50 \% more than $s$, then what is the ratio of $p:u$ ?
+				\begin{enumerate}
+						\begin{multicols}{4}
+						\item 2:15
+						\item 16:15
+						\item 1:5
+						\item 16:45
+						\end{multicols}
+				\end{enumerate}
+	\item Given the statements : \\
+		P is the sister of Q \\
+		Q is the husband of R \\
+		R is the mother of S \\
+		T is the husband of P \\
+		Based on the above information, T is \rule{1cm}{0.1pt} of S.
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item the grandfather
+				\item an uncle
+				\item the father
+				\item a brother
+				\end{multicols}
+		\end{enumerate}
+	\item In the following diagram, the point R is the centre of the circle. The lines PQ and ZV are tangential to the circle. The relation among the areas of the squares, PXWR, RUVZ and SPQT is
+		\begin{figure}[H]
+			\centering
+			\input{figs/5.tex}
+			\label{tab: Q_5}
+		\end{figure}
+		\begin{enumerate}
+			\item Ar(SPQT) = Ar(RUVZ) + Ar(PXWR)
+			\item Ar(SPQT) = Ar(PXWR) + Ar(RUVZ)
+			\item Ar(PXWR) = Ar(SPQT) - Ar(RUVZ)
+			\item Ar(PXWR) = Ar(RUVZ) - Ar(SPQT)
+		\end{enumerate}
+	\item Healthy eating is a critical component of healthy ageing. When should one start eating healthy ? It turns out that it is never too early. For example, babies who start eating healthy in the first year are more likely to have better overall health as they get older. \\
+		Which one of the following is the CORRECT logical inference based on the information in the above passage ?
+		\begin{enumerate}
+			\item Healthy eating is important for those with good health conditions, but not for others.
+			\item Eating healthy can be started at any age, earlier the better.
+			\item Eating healthy and better overall health are more correlated at a young age, but not older age.
+			\item Healthy eating is more important for adults than kids.
+		\end{enumerate}
+	\item P invested rupees 5000 per month for 6 months of a year and Q invested rupess $x$ per month for 8 months of the year in a partnership business. The profit is shared in proportion to the total investment in that year. \\
+		If at the end of that investment year, Q receives $\frac{4}{9}$ of the total profit, what is the value of $x$ ( in rupees ) ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 2500
+				\item 3000
+				\item 4687
+				\item 8437
+				\end{multicols}
+		\end{enumerate}
+	\item The frequency chart below shows the frequency distribution of marks obtained by a set of students in an exam . \\
+		\begin{figure}[H]
+			\centering
+			\input{figs/8.tex}
+			\label{tab: Q_8}
+		\end{figure}
+		From the data presented above, which of the following is CORRECT ?
+		\begin{enumerate}
+			\item mean $>$ mode $>$ median
+			\item mode $>$ median $>$ median
+			\item mode $>$ mean $>$ median
+			\item median $>$ mode $>$ mean
+		\end{enumerate}
+	\item In the suare grid shown below, a person standing at P2 position is required to move to p5 position. \\
+		\begin{figure}[H]
+			\centering
+			\input{figs/9.tex}
+			\label{tab: Q_9}
+		\end{figure}
+		The only movement allowed for a step involves, " two moves along one direction followed by one move in a perpendicular direction ". %The permissible directions for movement are shown as dotted arrows in the right. \\
+		%For example, a person at a given position \textbf{Y} can move only to the position marked \textbf{X} on the right. \\
+		Without occupying any of the shaded squares at the end of each step, the minimum number of steps required to go from P2 to P5 is
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item 4
+				\item 5
+				\item 6
+				\item 7
+				\end{multicols}
+		\end{enumerate}
+	\item Consider a cube made by folding a single sheet of paper of appropriate shape. The interior faces of the cube are all blank. However, the exterior faces that are not visible in the above view may not be blank. \\
+		Which one of the following represents a possible unfolding of the  cube ?
+		\begin{multicols}{2}
+			\begin{enumerate}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/10a.tex}
+			\label{tab: Q_10a}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/10b.tex}
+			\label{tab: Q_10b}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/10c.tex}
+			\label{tab: Q_10c}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/10d.tex}
+			\label{tab: Q_10d}
+		\end{figure}
+			\end{enumerate}
+		\end{multicols}
+	\item For the Op-Amp circuit shown below, choose the correct output waveform corresponding to the input $V_{in} = 1.5 \sin{20 \pi t}$ ( in Volts ). The saturation voltage for this circuit is $V_{sat} = \pm 10 V$
+		\begin{figure}[H]
+			\centering
+			\input{figs/11.tex}
+			\label{tab: Q_11}
+		\end{figure}
+		%\begin{multicols}{2}
+			\begin{enumerate}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/11a.tex}
+			\label{tab: Q_11a}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/11b.tex}
+			\label{tab: Q_11b}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/11c.tex}
+			\label{tab: Q_11c}
+		\end{figure}
+				\item
+					\begin{figure}[H]
+			\centering
+			\input{figs/11d.tex}
+			\label{tab: Q_11d}
+		\end{figure}
+			\end{enumerate}
+		%\end{multicols}
+	\item Match the order of $\beta^{-1}$ decays given in the left column to appropriate clause in the right column. Here $X(i^{\pi}) \text{and} Y(I^{\pi})$ are nuclei with intrinsic spin $I$ and parity $\pi$.
+		\input{tables/12.tex}
+		\begin{enumerate}
+				\begin{multicols}{2}
+				\item 1 - i, 2 - ii, 3 - iii, 4 - iv
+				\item 1 - iv, 2 - 1, 3 - ii, 4 - iii
+				\item 1 - i, 2 - iii, 3 - ii, 4 - iv
+				\item 1 - iv, 2 - ii, 3 - iii, 4 - i
+				\end{multicols}
+		\end{enumerate}
+	\item What is the maximum number of free independent real parameters specifying an n-dimensional orthogonal matrix ?
+		\begin{enumerate}
+				\begin{multicols}{4}
+				\item $n(n-2)$
+				\item $\brak{n-1}^2$
+				\item $\frac{n(n-1)}{2}$
+				\item $\frac{n(n+1)}{2}$
+				\end{multicols}
+		\end{enumerate}
+\end{enumerate}
+\end{document}
+

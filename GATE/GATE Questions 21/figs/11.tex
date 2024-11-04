@@ -1,0 +1,23 @@
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (3.75,10.25) node[op amp,scale=1] (opamp2) {};
+\draw (opamp2.+) to[short] (2.25,9.75);
+\draw  (opamp2.-) to[short] (2.25,10.75);
+\draw (4.95,10.25) to[short](5.25,10.25);
+\draw (2.25,9.75) to[R] (2.25,6);
+\draw (2.25,8.5) to[R] (6.75,8.5);
+\draw (3.75,10.75) to[short] (3.75,12.25);
+\draw (3.75,9.75) to[short] (3.75,9);
+\draw (3.75,10) to[short] (3.75,9.25);
+\draw (3.75,10.5) to[short] (3.75,11.5);
+\draw (6.75,8.5) to[short] (6.75,10.25);
+\draw (6.75,10.25) to[short] (5,10.25);
+\draw (2.25,10.75) to[short] (0,10.75);
+\draw (0,10.75) to[sinusoidal voltage source, sources/symbol/rotate=auto] (0,8.75);
+\draw (2.25,6.5) to (2.25,6) node[ground]{};
+\draw (0,9) to (0,7.75) node[ground]{};
+\node [font=\normalsize] at (-0.5,9.25) {$V_{in}$};
+\node [font=\normalsize] at (1.5,8) {2.2 k $\Omega$};
+\node [font=\normalsize] at (4.25,8) {20 k$\Omega$};
+\node [font=\normalsize] at (6,10.5) {$V_{out}$};
+\end{circuitikz}
