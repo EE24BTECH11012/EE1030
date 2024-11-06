@@ -36,9 +36,9 @@ Solve for \emph{k} and find the distance using distance formula. \\
     \hline
     \textbf{Variable name} & \textbf{Description} & \textbf{Formula}\\ 
     \hline
-    A & \vec{10,-6}. &  $\vec{M} = \frac{\vec{A} + \vec{B}}{2}$\\
+    A & $\brak{10,-6}$. &  $\vec{M} = \frac{\vec{A} + \vec{B}}{2}$\\
     \hline 
-		B & \vec{\emph{k},4} &  \\
+		B & $\brak{\emph{k},4}$ &  \\
     \hline
 		M & The midpoint of line-segment \vec{AB} &   \\
     \hline   
@@ -106,13 +106,13 @@ float norm(float a, float b, float c, float d )
 {
 	FILE *ptr; 
 	ptr=fopen("main.txt", "w");
-	float mp(float, float) ;
+	float mp(float, float) ; //function prototype
 	float norm(float, float, float, float) ;
 	float midp1, midp2, dist ;
 	midp1 = (float) mp(10,22);
 	midp2 = (float) mp(-6,4);
 	dist = (float) norm(10,-6,22,4);
-        fprintf(ptr, "%f\n", midp1 );
+        fprintf(ptr, "%f\n", midp1 ); 
 	fprintf(ptr, "%f\n", midp2 );
 	fprintf(ptr, "%f", dist );
         fclose(ptr) ;
