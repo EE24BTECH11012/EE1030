@@ -1,0 +1,8 @@
+
+plt.plot (x,y,color='red', linestyle='-', label='given line AB')
+plt.plot (w,z,color='green', linestyle='-', label='The line a-2b=18')
+plt.xlabel('X-AXIS')
+plt.ylabel('Y-AXIS')
+plt.grid()
+plt.legend()
+plt.show()
