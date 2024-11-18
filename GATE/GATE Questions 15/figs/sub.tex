@@ -1,0 +1,32 @@
+\begin{figure}[H]
+			\centering
+		\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw (4.75,12.5) node[op amp,scale=1, yscale=-1 ] (opamp2) {};
+\draw (opamp2.+) to[short] (3.25,13);
+\draw  (opamp2.-) to[short] (3.25,12);
+\draw (5.95,12.5) to[short](6.25,12.5);
+\draw (3.25,12) to (3.25,11.5) node[ground]{};
+\draw (3.25,13) to[short] (3.25,14.5);
+\draw (5.75,14.5) to[short] (5.75,12.5);
+\draw (4.5,13) to[short] (4.5,13.75);
+\draw (4.5,12) to[short] (4.5,11.25);
+\draw (6,12.5) to[short] (7,12.5);
+\node at (3.25,13) [circ] {};
+\node at (3.25,12) [circ] {};
+\node at (4.5,13.75) [circ] {};
+\node at (4.5,11.25) [circ] {};
+\node at (5.75,12.5) [circ] {};
+\node [font=\normalsize] at (0.75,13.25) {$V_{in}$};
+\node [font=\normalsize] at (7,12.75) {$V_{out}$};
+\node [font=\normalsize] at (5.25,13.75) {+15 V};
+\node [font=\normalsize] at (5,11.25) {-15 V};
+\draw (3.25,13) to[R] (0.75,13);
+\draw (3.25,14.5) to[R] (5.75,14.5);
+\node [font=\normalsize] at (2,13.5) {R};
+\node [font=\normalsize] at (4.5,15) {100 R};
+\end{circuitikz}
+			\label{25}
+			\caption{}
+		\end{figure}
+
